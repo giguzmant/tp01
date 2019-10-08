@@ -1,0 +1,41 @@
+#portfolio{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.portfolio-filter{
+    background-color: $portfolio-button-bg-color;
+    width:65px;
+    border-radius:20px;
+    text-align:center;
+    height:33px;
+    line-height:33px;
+    &:hover{
+        background-color: $portfolio-button-color;
+    }
+
+
+}
+#portfolio-menu{
+    display:flex;
+    width:80%;
+    justify-content:space-evenly;
+    @include tablet{
+        width: 50%;
+    }
+    @include desktop{
+        width:30%;
+    }
+}
+
+.portfolio-menu-anchor{
+    text-decoration:none;
+    font-family: $open-font;
+    color:$portfolio-button-color;
+    font-weight:100;
+    font-size:12px;
+    &:hover{
+        color: #fff;
+    }
+}

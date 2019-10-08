@@ -1,6 +1,81 @@
-
+/* MENU */
+/* HEADER */
+/* ABOUT US */
+/* COLOR DE TITULO */
+/* COLOR DE SUBTITULO */
+/* SERVICES */
+/* COLOR DE TITULO */
+/* COLOR SUBTITULO */
+/* WHY CHOOSE US? */
+/* OUR PORTFOLIO */
+/* COLOR DE TITULO */
+/* TESTIMONIALS */
+/* COLOR DE TITULO */
+/* TEAM */
+/* COLOR DE TITULO */
+/* COLOR DE SUBTITULO */
+/* OUR CLIENTS */
+/* COLOR DE TITULO */
+/* COLOR DE SUBTITULO */
+/* CONTACT US */
+/* COLOR DE TITULO */
+/* COLOR DE SUBTITULO */
+/* FOOTER */
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700&display=swap");
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-filter {
+  background-color: #ecf5ff;
+  width: 65px;
+  border-radius: 20px;
+  text-align: center;
+  height: 33px;
+  line-height: 33px;
+}
+.portfolio-filter:hover {
+  background-color: #017bfe;
+}
+
+#portfolio-menu {
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+}
+@media (min-width: 768px) {
+  #portfolio-menu {
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  #portfolio-menu {
+    width: 30%;
+  }
+}
+
+.portfolio-menu-anchor {
+  text-decoration: none;
+  font-family: "Open-sans", sans-serif;
+  color: #017bfe;
+  font-weight: 100;
+  font-size: 12px;
+}
+.portfolio-menu-anchor:hover {
+  color: #fff;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #273c50;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+}
+
 body {
   margin: 0;
   box-sizing: border-box;
@@ -213,13 +288,14 @@ main .bg-home div .button-home .button-home-2:hover {
 }
 main .bg-home .img-home {
   margin: 0;
-  display: flex;
+  display: inline-block;
+  position: relative;
 }
 main .bg-home .img-home img {
   width: 55%;
   height: auto;
-  justify-items: flex-end;
-  flex-direction: row;
+  position: absolute;
+  right: 300px;
 }
 
 /*# sourceMappingURL=styles.css.map */
