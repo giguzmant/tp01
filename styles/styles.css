@@ -420,4 +420,49 @@ main .bg-home .img-home img {
   position: relative;
 }
 
+#portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-filter {
+  background-color: #ecf5ff;
+  width: 65px;
+  border-radius: 20px;
+  text-align: center;
+  height: 33px;
+  line-height: 33px;
+}
+.portfolio-filter:hover {
+  background-color: #017bfe;
+}
+
+#portfolio-menu {
+  display: flex;
+  width: 80%;
+  justify-content: space-evenly;
+}
+@media (min-width: 768px) {
+  #portfolio-menu {
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  #portfolio-menu {
+    width: 30%;
+  }
+}
+
+.portfolio-menu-anchor {
+  text-decoration: none;
+  font-family: "Open-sans", sans-serif;
+  color: #017bfe;
+  font-weight: 100;
+  font-size: 12px;
+}
+.portfolio-menu-anchor:hover {
+  color: #fff;
+}
+
 /*# sourceMappingURL=styles.css.map */
