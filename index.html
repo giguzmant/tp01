@@ -8,6 +8,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
 </head>
 
 <body id="home">
@@ -40,7 +41,24 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#team">Team</a></li>
-                    <li><a href="#">Drop Down</a></li>
+                    <li><a href="#">Drop Down</a>
+                        <div>
+                            <a href="#dropdown-mobile"><i class="fa fa-chevron-down icon-down"
+                                    aria-hidden="true"></i></a>
+                        </div>
+
+                        <div class="dropdown-mobile" id="dropdown-mobile">
+                            <ul>
+                                <li><a href="#">Drop Down 1</a></li>
+                                <li><a href="#">Drop Down 2</a></li>
+                                <li><a href="#">Drop Down 3</a></li>
+                                <li><a href="#">Drop Down 4</a></li>
+                                <li><a href="#">Drop Down 5</a></li>
+                            </ul>
+
+                        </div>
+
+                    </li>
                     <li><a href="#contact">Contact Us</a></li>
                 </ul>
                 <div class="close"><a href="#home"><i class="fa fa-times" aria-hidden="true"></i>
@@ -62,9 +80,9 @@
                         <button type="button" class="button-home-2"><a href="#services">Our services</a></button>
                     </div>
 
-                    <div class="img-home">
-                        <img src="img/intro-img.svg">
-                    </div>
+                </div>
+                <div class="img-home">
+                    <img src="img/intro-img.svg">
                 </div>
             </div>
         </section>
@@ -152,54 +170,119 @@
         <section id="services">
 
             <div>
-                <div>
-                    <h1>Services</h1>
-                    <h4>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant
-                        vituperatoribus.</h4>
+                <h1>Services</h1>
+                <div class="subtit">
+                    <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant
+                        vituperatoribus.</p>
                 </div>
+                <div class="container-cards">
+                    <div class="card">
+                        <div>
+                                <i class="fa fa-bath" aria-hidden="true"></i>
+                            <span class="iconify icon-1" data-icon="ion-ios-analytics-outline" data-inline="false"></span>
+                        </div>
+                        <div class="card-tit">
+                            <h3><a href="#">Lorem Ipsum</a></h3>
+                        </div>
+                        <div class="card-text">
+                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                occaecati
+                                cupiditate non
+                                provident</p>
+                        </div>
+                    </div>
 
-                <div>
-                    <h3><a href="#">Lorem Ipsum</a></h3>
-                    <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
-                        cupiditate non
-                        provident</p>
-                </div>
+                    <div class="container-cards">
+                        <div class="card">
+                            <div>
+                                <span class="iconify" data-icon="ion-ios-bookmarks-outline" data-inline="false"></span>
+                            </div>
+                            <div class="card-tit">
+                                <h3><a href="#">Dolor Sitema</a></h3>
+                            </div>
+                            <div class="card-text">
+                                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat
+                                    tarad
+                                    limino
+                                    ata</p>
+                            </div>
+                        </div>
+                    </div>
 
-                <div>
-                    <h3><a href="#">Dolor Sitema</a></h3>
-                    <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-                        tarad
-                        limino
-                        ata</p>
-                </div>
+                    <div class="container-cards">
+                        <div class="card">
+                            <div>
+                                <span class="iconify" data-icon="ion-ios-paper-outline" data-inline="false"></span>
+                            </div>
+                            <div class="card-tit">
+                                <h3><a href="#">Sed ut perspiciatis</a></h3>
+                            </div>
+                            <div class="card-text">
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat
+                                    nulla
+                                    pariatur</p>
+                            </div>
+                        </div>
+                    </div>
 
-                <div>
-                    <h3><a href="#">Sed ut perspiciatis</a></h3>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur</p>
-                </div>
+                    <div class="container-cards">
+                        <div class="card">
+                            <div>
+                                <span class="iconify" data-icon="ion-ios-paper-outline" data-inline="false"></span>
+                            </div>
+                            <div class="card-tit">
+                                <h3><a href="#">Magni Dolores</a></h3>
+                            </div>
 
-                <div>
-                    <h3><a href="#">Magni Dolores</a></h3>
-                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                        est
-                        laborum
-                    </p>
-                </div>
+                            <div class="card-text">
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                    mollit
+                                    anim id
+                                    est
+                                    laborum
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-                <div>
-                    <h3><a href="#">Nemo Enim</a></h3>
-                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-                        deleniti
-                        atque</p>
-                </div>
+                    <div class="container-cards">
+                        <div class="card">
+                            <div>
+                                <span class="iconify" data-icon="ion-ios-paper-outline" data-inline="false"></span>
+                            </div>
+                            <div class="card-tit">
+                                <h3><a href="#">Nemo Enim</a></h3>
+                            </div>
+                            <div class="card-text">
+                                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                                    voluptatum
+                                    deleniti
+                                    atque</p>
+                            </div>
+                        </div>
+                    </div>
 
-                <div>
-                    <h3> <a href="#">Eiusmod Tempor</a></h3>
-                    <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
-                        est
-                        eligendi
-                    </p>
+                    <div class="container-cards">
+                        <div class="card">
+                            <div>
+                                    <span class="iconify" data-icon="ion-ios-paper-outline" data-inline="false"></span>
+
+                            </div>
+                            <div class="card-tit">
+                                    <h3> <a href="#">Eiusmod Tempor</a></h3>
+                            </div>
+                            <div class="card-text">
+                                    <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
+                                    soluta
+                                    nobis
+                                    est
+                                    eligendi
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

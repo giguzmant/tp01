@@ -1,4 +1,28 @@
-
+/* MENU */
+/* HEADER */
+/* ABOUT US */
+/* COLOR DE TITULO */
+/* COLOR DE SUBTITULO */
+/* SERVICES */
+/* COLOR DE TITULO */
+/* COLOR SUBTITULO */
+/* WHY CHOOSE US? */
+/* OUR PORTFOLIO */
+/* COLOR DE TITULO */
+/* TESTIMONIALS */
+/* COLOR DE TITULO */
+/* TEAM */
+/* COLOR DE TITULO */
+/* COLOR DE SUBTITULO */
+/* OUR CLIENTS */
+/* COLOR DE TITULO */
+/* COLOR DE SUBTITULO */
+/* CONTACT US */
+/* COLOR DE TITULO */
+/* COLOR DE SUBTITULO */
+/* FOOTER */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700&display=swap");
 body {
@@ -6,7 +30,37 @@ body {
   box-sizing: border-box;
 }
 
-/* menu desktop & mobile */
+h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #273c50;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+/* MENU */
+/* HEADER */
+/* ABOUT US */
+/* COLOR DE TITULO */
+/* COLOR DE SUBTITULO */
+/* SERVICES */
+/* COLOR DE TITULO */
+/* COLOR SUBTITULO */
+/* WHY CHOOSE US? */
+/* OUR PORTFOLIO */
+/* COLOR DE TITULO */
+/* TESTIMONIALS */
+/* COLOR DE TITULO */
+/* TEAM */
+/* COLOR DE TITULO */
+/* COLOR DE SUBTITULO */
+/* OUR CLIENTS */
+/* COLOR DE TITULO */
+/* COLOR DE SUBTITULO */
+/* CONTACT US */
+/* COLOR DE TITULO */
+/* COLOR DE SUBTITULO */
+/* FOOTER */
 header {
   position: fixed;
   top: 0;
@@ -16,10 +70,10 @@ header {
   width: 100%;
 }
 header nav {
-  padding: 20px 10%;
+  padding: 20px 7%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 header nav .logo img {
   height: 27px;
@@ -66,7 +120,7 @@ header nav .menu-mobile {
 header nav .menu-mobile .mobile {
   background-color: rgba(19, 39, 57, 0.8);
   height: 100%;
-  width: 220px;
+  width: 260px;
   position: fixed;
   top: 0;
   left: -220px;
@@ -90,6 +144,14 @@ header nav .menu-mobile .mobile li a {
 header nav .menu-mobile .mobile li a:hover {
   color: #007bff;
 }
+header nav .menu-mobile .mobile .icon-down {
+  color: #ffffff;
+  font-weight: 1000;
+  font-size: 17px;
+  position: absolute;
+  right: 15px;
+  top: 256px;
+}
 header nav .menu-mobile .close {
   position: absolute;
   top: 19px;
@@ -109,12 +171,12 @@ header nav #menu-mobile:target .close {
   display: block;
 }
 
-@media (min-width: 968px) {
+@media (min-width: 1024px) {
   .menu-mobile {
     display: none;
   }
 }
-@media (max-width: 968px) {
+@media (max-width: 1024px) {
   header nav {
     padding: 20px 10%;
   }
@@ -130,7 +192,29 @@ header nav #menu-mobile:target .close {
     display: none;
   }
 }
-/* hero */
+/* MENU */
+/* HEADER */
+/* ABOUT US */
+/* COLOR DE TITULO */
+/* COLOR DE SUBTITULO */
+/* SERVICES */
+/* COLOR DE TITULO */
+/* COLOR SUBTITULO */
+/* WHY CHOOSE US? */
+/* OUR PORTFOLIO */
+/* COLOR DE TITULO */
+/* TESTIMONIALS */
+/* COLOR DE TITULO */
+/* TEAM */
+/* COLOR DE TITULO */
+/* COLOR DE SUBTITULO */
+/* OUR CLIENTS */
+/* COLOR DE TITULO */
+/* COLOR DE SUBTITULO */
+/* CONTACT US */
+/* COLOR DE TITULO */
+/* COLOR DE SUBTITULO */
+/* FOOTER */
 main .bg-home {
   background-color: #1445b3;
   display: flex;
@@ -148,13 +232,14 @@ main .bg-home div {
   justify-content: space-between;
 }
 main .bg-home div p {
-  margin: 0;
+  margin-left: -30px;
   padding-bottom: 40px;
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
   font-weight: 800;
   color: #ffffff;
   width: 450px;
+  margin-top: 11px;
 }
 main .bg-home div p .underline {
   text-decoration: underline;
@@ -168,6 +253,7 @@ main .bg-home div .button-home {
   justify-content: space-between;
   height: auto;
   margin-bottom: 35px;
+  margin-left: -30px;
 }
 main .bg-home div .button-home .button-home-1 {
   color: #ffffff;
@@ -214,12 +300,124 @@ main .bg-home div .button-home .button-home-2:hover {
 main .bg-home .img-home {
   margin: 0;
   display: flex;
+  justify-content: center;
+  margin-top: 63px;
+  margin-right: -49px;
 }
 main .bg-home .img-home img {
-  width: 55%;
+  width: 500px;
   height: auto;
-  justify-items: flex-end;
-  flex-direction: row;
+}
+
+@media (max-width: 1024px) {
+  main .bg-home {
+    padding: 10px 5%;
+  }
+}
+@media (max-width: 1024px) and (min-width: 600px) {
+  main .bg-home {
+    padding: 10px 5%;
+    display: flex;
+    flex-direction: column-reverse;
+    background-size: 100% 740px;
+    height: 100%;
+  }
+  main .bg-home div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+  }
+  main .bg-home div p {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  main .bg-home .img-home {
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+    margin-right: -43px;
+    height: auto;
+  }
+  main .bg-home .img-home img {
+    width: 500px;
+    height: auto;
+  }
+}
+@media (max-width: 599px) {
+  main .bg-home {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+  main .bg-home div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+  }
+  main .bg-home div p {
+    text-align: center;
+    font-size: 36px;
+    padding-bottom: 10px;
+    justify-content: center;
+    margin-left: 0;
+  }
+  main .bg-home div .button-home {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+  }
+  main .bg-home div .button-home button {
+    margin: 5px;
+  }
+  main .bg-home div .button-home .button-home-2 {
+    margin-right: 0px;
+  }
+  main .bg-home .img-home {
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+    margin-right: 0;
+    height: auto;
+  }
+  main .bg-home .img-home img {
+    width: 400px;
+    height: auto;
+  }
+}
+#services {
+  background-color: #ecf5ff;
+  padding-top: 30px;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subtit {
+  width: 60%;
+  height: 60px;
+  margin: auto;
+  font-size: 15px;
+  font-weight: 400;
+  color: #556877;
+  line-height: 22px;
+  margin-top: -10px;
+  text-align: center;
+  letter-spacing: 0.1px;
+}
+
+.container-cards {
+  width: 100%;
+}
+
+.icon-1 {
+  height: 60px;
+  width: auto;
+  position: relative;
 }
 
 /*# sourceMappingURL=styles.css.map */
