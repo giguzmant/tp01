@@ -21,7 +21,11 @@
 /* COLOR DE TITULO */
 /* COLOR DE SUBTITULO */
 /* FOOTER */
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700&display=swap");
@@ -387,8 +391,7 @@ main .bg-home .img-home img {
     height: auto;
   }
 }
-#services {
-  background-color: #ecf5ff;
+#about {
   padding-top: 30px;
   font-family: "Open Sans", sans-serif;
   display: flex;
@@ -396,8 +399,47 @@ main .bg-home .img-home img {
   justify-content: center;
   align-items: center;
 }
+#about .subtit {
+  width: 50%;
+}
 
-.subtit {
+/* MENU */
+/* HEADER */
+/* ABOUT US */
+/* COLOR DE TITULO */
+/* COLOR DE SUBTITULO */
+/* SERVICES */
+/* COLOR DE TITULO */
+/* COLOR SUBTITULO */
+/* WHY CHOOSE US? */
+/* OUR PORTFOLIO */
+/* COLOR DE TITULO */
+/* TESTIMONIALS */
+/* COLOR DE TITULO */
+/* TEAM */
+/* COLOR DE TITULO */
+/* COLOR DE SUBTITULO */
+/* OUR CLIENTS */
+/* COLOR DE TITULO */
+/* COLOR DE SUBTITULO */
+/* CONTACT US */
+/* COLOR DE TITULO */
+/* COLOR DE SUBTITULO */
+/* FOOTER */
+#why-choose-us {
+  background-color: #004a99;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#services {
+  background-color: #ecf5ff;
+  padding-top: 30px;
+  font-family: "Open Sans", sans-serif;
+}
+#services .subtit {
   width: 60%;
   height: 60px;
   margin: auto;
@@ -409,15 +451,51 @@ main .bg-home .img-home img {
   text-align: center;
   letter-spacing: 0.1px;
 }
-
-.container-cards {
+#services .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  align-content: center;
 }
-
-.icon-1 {
-  height: 60px;
-  width: auto;
-  position: relative;
+#services .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin: 20px;
+  padding: 20px;
+  overflow: hidden;
+}
+#services .card .card-icon {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+}
+#services .card .card-icon img {
+  width: 56px;
+  height: auto;
+}
+#services .card .tit-card {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: #000000;
+  text-decoration: none;
+  margin-left: 75px;
+}
+#services .card .card-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #444444;
+  margin-left: 75px;
+  margin-top: -10px;
 }
 
 #portfolio {
@@ -464,5 +542,7 @@ main .bg-home .img-home img {
 .portfolio-menu-anchor:hover {
   color: #fff;
 }
+
+/* PRUEBA DE BRANCH */
 
 /*# sourceMappingURL=styles.css.map */

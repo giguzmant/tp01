@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700&display=swap');
 
 #services{
@@ -6,11 +6,8 @@
     background-color: $services-bg-color;
     padding-top: 30px;
     font-family: "Open Sans", sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-     align-items: center;
-}
+    
+   
     .subtit{
         width: 60%;
         height: 60px;
@@ -24,18 +21,74 @@
         letter-spacing: 0.1px;
     }
 
-    .container-cards{
 
+    .cards{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         width: 100%;
+        align-content: center;
+
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 400px;
+        height: auto;
+        border-radius: 10px;
+        background-color: #ffffff;
+        margin: 20px;
+        padding: 20px;
+        overflow: hidden;
+
+        .card-icon{
+            display:flex;
+            position: absolute;
+            flex-direction: column;
+            justify-content: center;
+
+            img{
+                width: 56px;
+                height: auto;
+            
+            }
+         }
+
+         
+         .tit-card{
+            
+            font-family: "Montserrat", sans-serif;
+            font-weight: 800;
+            font-size: 18px;
+            color: #000000;
+            text-decoration: none;
+            margin-left: 75px;
+
+
+        }
+
+        .card-text{
+            
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 22px;
+            color: #444444;
+            margin-left: 75px;
+            margin-top: -10px;
+        }
+
+
         
+    }
+
     
 
-    }
+    
 
 
 
-    .icon-1{
-        height: 60px;
-        width: auto;
-        position: relative;
-    }
+}
