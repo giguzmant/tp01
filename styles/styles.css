@@ -72,6 +72,7 @@ header {
   box-shadow: 0px 0px 25px rgba(127, 137, 161, 0.3);
   background-color: #ffffff;
   width: 100%;
+  z-index: 1000;
 }
 header nav {
   padding: 20px 7%;
@@ -437,10 +438,11 @@ main .bg-home .img-home img {
 #services {
   background-color: #ecf5ff;
   padding-top: 30px;
+  padding-bottom: 70px;
   font-family: "Open Sans", sans-serif;
 }
 #services .subtit {
-  width: 60%;
+  width: 45%;
   height: 60px;
   margin: auto;
   font-size: 15px;
@@ -450,6 +452,7 @@ main .bg-home .img-home img {
   margin-top: -10px;
   text-align: center;
   letter-spacing: 0.1px;
+  padding-bottom: 30px;
 }
 #services .cards {
   display: flex;
@@ -469,13 +472,12 @@ main .bg-home .img-home img {
   background-color: #ffffff;
   margin: 20px;
   padding: 20px;
-  overflow: hidden;
 }
 #services .card .card-icon {
   display: flex;
-  position: absolute;
   flex-direction: column;
   justify-content: center;
+  position: absolute;
 }
 #services .card .card-icon img {
   width: 56px;
@@ -489,6 +491,10 @@ main .bg-home .img-home img {
   text-decoration: none;
   margin-left: 75px;
 }
+#services .card .tit-card:hover {
+  color: #007bff;
+  transition: all 0.3s;
+}
 #services .card .card-text {
   font-size: 14px;
   font-weight: 400;
@@ -497,7 +503,16 @@ main .bg-home .img-home img {
   margin-left: 75px;
   margin-top: -10px;
 }
+#services .card:hover {
+  transform: translateY(-7px);
+  transition: all 0.3s ease-in-out;
+}
 
+@media (min-width: 978px) {
+  .cards {
+    width: 700px;
+  }
+}
 #portfolio {
   display: flex;
   flex-direction: column;
