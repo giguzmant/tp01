@@ -33,74 +33,68 @@
         width: 100%;
         align-content: center;
 
-    }
 
-    .card{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 400px;
-        height: auto;
-        border-radius: 10px;
-        background-color: #ffffff;
-        margin: 20px;
-        padding: 20px;
-    
-
-        .card-icon{
-            display:flex;
+        .card{
+            display: flex;
             flex-direction: column;
             justify-content: center;
-            position: absolute;
-            
-            img{
-                width: 56px;
-                height: auto;
-               
-            
+            width: 350px;
+            height: auto;
+            border-radius: 10px;
+            background-color: #ffffff;
+            margin: 20px;
+            padding: 20px;
+        
+    
+            .card-icon{
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                position: absolute;
+                
+                img{
+                    width: 56px;
+                    height: auto; 
+                
+                }
+             }
+    
+             
+             .tit-card{
+                
+                font-family: "Montserrat", sans-serif;
+                font-weight: 800;
+                font-size: 18px;
+                color: #000000;
+                text-decoration: none;
+                margin-left: 75px;
+    
+                &:hover{
+                    color: #007bff;
+                    transition: all 0.3s;
+                }
+    
             }
-         }
-
-         
-         .tit-card{
-            
-            font-family: "Montserrat", sans-serif;
-            font-weight: 800;
-            font-size: 18px;
-            color: #000000;
-            text-decoration: none;
-            margin-left: 75px;
-
+    
+            .card-text{
+                
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+                color: #444444;
+                margin-left: 75px;
+                margin-top: -10px;
+            }
+    
             &:hover{
-                color: #007bff;
-                transition: all 0.3s;
+                transform: translateY(-7px);
+                transition: all 0.3s ease-in-out;
             }
-
-        }
-
-        .card-text{
             
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 22px;
-            color: #444444;
-            margin-left: 75px;
-            margin-top: -10px;
+            
         }
 
-        &:hover{
-            transform: translateY(-7px);
-            transition: all 0.3s ease-in-out;
-        }
-        
-        
+       
+
     }
-
-}
-
-@media screen and (min-width: 960px) { 
-    .cards{
-        width: 100%;
-    }
-
 }

@@ -520,28 +520,28 @@ main .bg-home .img-home img {
   width: 100%;
   align-content: center;
 }
-#services .card {
+#services .cards .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 400px;
+  width: 350px;
   height: auto;
   border-radius: 10px;
   background-color: #ffffff;
   margin: 20px;
   padding: 20px;
 }
-#services .card .card-icon {
+#services .cards .card .card-icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: absolute;
 }
-#services .card .card-icon img {
+#services .cards .card .card-icon img {
   width: 56px;
   height: auto;
 }
-#services .card .tit-card {
+#services .cards .card .tit-card {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -549,11 +549,11 @@ main .bg-home .img-home img {
   text-decoration: none;
   margin-left: 75px;
 }
-#services .card .tit-card:hover {
+#services .cards .card .tit-card:hover {
   color: #007bff;
   transition: all 0.3s;
 }
-#services .card .card-text {
+#services .cards .card .card-text {
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -561,16 +561,11 @@ main .bg-home .img-home img {
   margin-left: 75px;
   margin-top: -10px;
 }
-#services .card:hover {
+#services .cards .card:hover {
   transform: translateY(-7px);
   transition: all 0.3s ease-in-out;
 }
 
-@media screen and (min-width: 960px) {
-  .cards {
-    width: 100%;
-  }
-}
 #portfolio {
   display: flex;
   flex-direction: column;
