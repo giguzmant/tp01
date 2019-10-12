@@ -145,13 +145,13 @@ header {
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 993px) {
     .menu-mobile {
         display: none;
     }
-}
+} /* DESKTOP */
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
 
     header {
 
