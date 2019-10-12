@@ -409,8 +409,25 @@ main .bg-home .img-home img {
   justify-content: center;
   align-items: center;
 }
-#about .subtit {
-  width: 50%;
+#about .about-subtit {
+  width: 43%;
+  height: 60px;
+  margin: auto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: -10px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  padding-bottom: 40px;
+  font-family: "Open Sans";
+  color: black;
+}
+#about .container-part-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #why-choose-us {
