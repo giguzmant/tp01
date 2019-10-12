@@ -452,7 +452,7 @@ main .bg-home .img-home img {
   margin-top: -10px;
   text-align: center;
   letter-spacing: 0.1px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 #services .cards {
   display: flex;
@@ -508,11 +508,6 @@ main .bg-home .img-home img {
   transition: all 0.3s ease-in-out;
 }
 
-@media (min-width: 978px) {
-  .cards {
-    width: 700px;
-  }
-}
 #portfolio {
   display: flex;
   flex-direction: column;
