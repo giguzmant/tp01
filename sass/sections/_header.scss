@@ -108,10 +108,11 @@ main{
             display: flex;
             justify-content: center;
             margin-top: 63px;
+            z-index: 1000;
     
                 img{
-                    width: 535px;
-                    height: auto;
+                    max-width: 100%;
+                    
                     
                 }
            
