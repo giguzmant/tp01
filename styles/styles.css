@@ -465,4 +465,117 @@ main .bg-home .img-home img {
   color: #fff;
 }
 
+.portfolio-img {
+  box-sizing: border-box;
+  height: 250px;
+  overflow: hidden;
+  margin: 10px;
+  position: relative;
+}
+.portfolio-img .img {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio-img .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .portfolio-img {
+    max-width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .portfolio-img {
+    max-width: 30%;
+  }
+}
+
+.portfolio-info {
+  position: absolute;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 49, 102, 0.5);
+  border-radius: 8px;
+}
+.portfolio-info h4 {
+  margin: 0;
+}
+.portfolio-info p {
+  text-align: center;
+  color: #fff;
+  font-family: "Open-sans", sans-serif;
+}
+.portfolio-info div {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+.portfolio-info div span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #017bfe;
+  text-align: center;
+  cursor: pointer;
+}
+.portfolio-info div span:hover {
+  background-color: #3495fe;
+  transition: background-color 0.5s ease;
+}
+.portfolio-info div .fas:before {
+  font-size: 17px;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+}
+.portfolio-info:hover {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.port-name {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+  transition: color 0.5s ease-in-out;
+}
+.port-name:hover {
+  color: #017bfe;
+  transition: color 0.5s ease-in-out;
+}
+
+#portfolio-wrap {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  #portfolio-wrap {
+    flex-wrap: wrap;
+    margin: 15px;
+    height: 1400px;
+  }
+}
+@media (min-width: 1024px) {
+  #portfolio-wrap {
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 30px;
+    height: 1000px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
