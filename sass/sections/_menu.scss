@@ -10,6 +10,7 @@ header {
     background-color: #ffffff;
     width: 100%;
     z-index: 1000;
+    transition: 0.5s all ease-out;
 
         nav {
             padding: 20px 7%;
@@ -145,13 +146,13 @@ header {
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 993px) {
     .menu-mobile {
         display: none;
     }
-}
+} /* DESKTOP */
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
 
     header {
 
