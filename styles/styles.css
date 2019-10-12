@@ -73,6 +73,7 @@ header {
   background-color: #ffffff;
   width: 100%;
   z-index: 1000;
+  transition: 0.5s all ease-out;
 }
 header nav {
   padding: 20px 7%;
@@ -308,7 +309,6 @@ main .bg-home .img-home {
   display: flex;
   justify-content: center;
   margin-top: 63px;
-  z-index: 1000;
 }
 main .bg-home .img-home img {
   max-width: 100%;
