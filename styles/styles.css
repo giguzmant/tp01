@@ -21,7 +21,11 @@
 /* COLOR DE TITULO */
 /* COLOR DE SUBTITULO */
 /* FOOTER */
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700&display=swap");
@@ -68,6 +72,8 @@ header {
   box-shadow: 0px 0px 25px rgba(127, 137, 161, 0.3);
   background-color: #ffffff;
   width: 100%;
+  z-index: 1000;
+  transition: 0.5s all ease-out;
 }
 header nav {
   padding: 20px 7%;
@@ -171,12 +177,13 @@ header nav #menu-mobile:target .close {
   display: block;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 993px) {
   .menu-mobile {
     display: none;
   }
 }
-@media (max-width: 1024px) {
+/* DESKTOP */
+@media (max-width: 992px) {
   header nav {
     padding: 20px 10%;
   }
@@ -216,30 +223,30 @@ header nav #menu-mobile:target .close {
 /* COLOR DE SUBTITULO */
 /* FOOTER */
 main .bg-home {
-  background-color: #1445b3;
+  background-image: url(../img/intro-bg.png);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 600px;
   padding: 20px 10%;
+  background-repeat: no-repeat;
+  background-size: 100% 621px;
 }
 main .bg-home div {
-  margin-right: 40px;
   height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 main .bg-home div p {
-  margin-left: -30px;
-  padding-bottom: 40px;
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
   font-weight: 800;
   color: #ffffff;
   width: 450px;
-  margin-top: 11px;
+  z-index: 100;
+  padding-left: 28px;
 }
 main .bg-home div p .underline {
   text-decoration: underline;
@@ -249,18 +256,17 @@ main .bg-home div p .underline {
 main .bg-home div .button-home {
   display: flex;
   flex-direction: row;
-  width: 300px;
+  width: 380px;
   justify-content: space-between;
   height: auto;
-  margin-bottom: 35px;
-  margin-left: -30px;
+  margin-left: 30px;
 }
 main .bg-home div .button-home .button-home-1 {
   color: #ffffff;
   background: #007bff;
   border: 1px solid #007bff;
   border-radius: 20px;
-  width: 160px;
+  width: 180px;
   height: 43px;
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
@@ -274,10 +280,11 @@ main .bg-home div .button-home .button-home-1 a {
 main .bg-home div .button-home .button-home-1:hover {
   border: 2px solid #ffffff;
   background: #1445b3;
+  transition: 0.5s all ease-in-out;
 }
 main .bg-home div .button-home .button-home-2 {
   border-radius: 20px;
-  width: 160px;
+  width: 180px;
   height: 43px;
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
@@ -286,7 +293,6 @@ main .bg-home div .button-home .button-home-2 {
   background: #1445b3;
   color: #ffffff;
   border: 2px solid #ffffff;
-  margin-right: -50px;
 }
 main .bg-home div .button-home .button-home-2 a {
   text-decoration: none;
@@ -296,31 +302,33 @@ main .bg-home div .button-home .button-home-2:hover {
   background: #007bff;
   color: #ffffff;
   border: 0px;
+  transition: 0.5s all ease-in-out;
 }
 main .bg-home .img-home {
   margin: 0;
   display: flex;
   justify-content: center;
   margin-top: 63px;
-  margin-right: -49px;
 }
 main .bg-home .img-home img {
-  width: 500px;
-  height: auto;
+  max-width: 100%;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   main .bg-home {
     padding: 10px 5%;
   }
+
+  /* DESKTOP */
 }
-@media (max-width: 1024px) and (min-width: 600px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   main .bg-home {
-    padding: 10px 5%;
     display: flex;
     flex-direction: column-reverse;
-    background-size: 100% 740px;
-    height: 100%;
+    background-size: 100% 697px;
+    background-repeat: no-repeat;
+    transform: translateY(40px);
+    padding: 41px 0 73px 0;
   }
   main .bg-home div {
     display: flex;
@@ -331,36 +339,40 @@ main .bg-home .img-home img {
   main .bg-home div p {
     text-align: center;
     margin-top: 0px;
-    margin-bottom: 0px;
+    padding-left: 0px;
   }
   main .bg-home .img-home {
     display: flex;
     align-items: center;
-    margin-top: 150px;
-    margin-right: -43px;
     height: auto;
   }
   main .bg-home .img-home img {
-    width: 500px;
+    width: 450px;
     height: auto;
   }
+  main .bg-home .button-home {
+    margin-left: 0px;
+  }
 }
-@media (max-width: 599px) {
+@media (max-width: 767px) {
   main .bg-home {
     display: flex;
     flex-direction: column-reverse;
-    height: 100%;
+    transform: translateY(74px);
+    padding: 41px 0 73px 0;
+    height: 547px;
   }
   main .bg-home div {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 0;
+    margin-bottom: 23px;
   }
   main .bg-home div p {
     text-align: center;
     font-size: 36px;
-    padding-bottom: 10px;
+    padding-bottom: -6px;
     justify-content: center;
     margin-left: 0;
   }
@@ -368,6 +380,7 @@ main .bg-home .img-home img {
     display: flex;
     flex-direction: column;
     margin-top: 5px;
+    margin-left: 0px;
   }
   main .bg-home div .button-home button {
     margin: 5px;
@@ -387,8 +400,8 @@ main .bg-home .img-home img {
     height: auto;
   }
 }
-#services {
-  background-color: #ecf5ff;
+/* PHONE*/
+#about {
   padding-top: 30px;
   font-family: "Open Sans", sans-serif;
   display: flex;
@@ -396,9 +409,98 @@ main .bg-home .img-home img {
   justify-content: center;
   align-items: center;
 }
+#about .subtit {
+  width: 50%;
+}
 
-.subtit {
-  width: 60%;
+#why-choose-us {
+  background-color: #004a99;
+  color: #ffffff;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+#why-choose-us .why-tit h1 {
+  color: #ffffff;
+}
+#why-choose-us .why-subtit {
+  color: #ffffff;
+  width: 45%;
+  height: 60px;
+  margin: auto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: -10px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  padding-bottom: 40px;
+  font-family: "Open Sans";
+}
+#why-choose-us .why-container-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  align-content: center;
+}
+#why-choose-us .why-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 320px;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #00458f;
+  margin: auto;
+  text-align: center;
+}
+#why-choose-us .why-card .why-icon {
+  font-size: 50px;
+  color: #bfddfe;
+}
+#why-choose-us .why-card .why-card-tit {
+  font-family: "Montserrat";
+  font-size: 20px;
+}
+#why-choose-us .why-card .why-card-subtit {
+  font-family: "Open Sans";
+  font-size: 15px;
+  line-height: 20px;
+}
+#why-choose-us .why-card .why-anchor {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+#why-choose-us .data-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  align-content: center;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+#why-choose-us .data-container .why-num {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 30px;
+}
+#why-choose-us .data-container .why-data-tit {
+  font-size: 15px;
+}
+
+#services {
+  background-color: #ecf5ff;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  font-family: "Open Sans", sans-serif;
+}
+#services .subtit {
+  width: 45%;
   height: 60px;
   margin: auto;
   font-size: 15px;
@@ -408,16 +510,60 @@ main .bg-home .img-home img {
   margin-top: -10px;
   text-align: center;
   letter-spacing: 0.1px;
+  padding-bottom: 40px;
 }
-
-.container-cards {
+#services .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+  align-content: center;
 }
-
-.icon-1 {
-  height: 60px;
-  width: auto;
-  position: relative;
+#services .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+  height: auto;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin: 20px;
+  padding: 20px;
+}
+#services .cards .card .card-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+}
+#services .cards .card .card-icon img {
+  width: 56px;
+  height: auto;
+}
+#services .cards .card .tit-card {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  color: #000000;
+  text-decoration: none;
+  margin-left: 75px;
+}
+#services .cards .card .tit-card:hover {
+  color: #007bff;
+  transition: all 0.3s;
+}
+#services .cards .card .card-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #444444;
+  margin-left: 75px;
+  margin-top: -10px;
+}
+#services .cards .card:hover {
+  transform: translateY(-7px);
+  transition: all 0.3s ease-in-out;
 }
 
 #portfolio {
@@ -443,7 +589,7 @@ main .bg-home .img-home img {
   width: 80%;
   justify-content: space-evenly;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   #portfolio-menu {
     width: 50%;
   }
@@ -465,7 +611,7 @@ main .bg-home .img-home img {
   color: #fff;
 }
 
-
+/* PRUEBA DE BRANCH */
 .portfolio-img {
   box-sizing: border-box;
   height: 250px;
