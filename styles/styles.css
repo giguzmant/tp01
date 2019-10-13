@@ -729,28 +729,114 @@ main .bg-home .img-home img {
 }
 
 .slider-container {
+  position: relative;
   overflow: hidden;
   box-sizing: border-box;
-  width: 80%;
-  height: 300px;
+  width: 100%;
+  height: 400px;
+  max-height: 400px;
   margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: block;
 }
 
 .sliders {
-  width: 2900px;
-  height: inherit;
+  width: 2130px;
+  height: 300px;
   transition: transform 600ms ease-in-out;
 }
 
 .slider-testimonials {
-  width: 550px;
-  height: 300px;
+  width: 400px;
+  height: 100%;
   font-size: 20px;
   display: inline-block;
   text-align: center;
-  padding-left: 25px;
-  padding-right: 25px;
   box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.slider-testimonials .slider-name {
+  font-size: 20px;
+  font-family: "Open-sans", sans-serif;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 5px;
+}
+.slider-testimonials .slider-charge {
+  font-size: 14px;
+  color: #999;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+.slider-testimonials .slider-info {
+  font-style: italic;
+  font-family: "Open-sans", sans-serif;
+  color: #444;
+  font-size: 16px;
+}
+
+.test-img {
+  width: 120px;
+  border: 4px solid #fff;
+  border-radius: 50%;
+}
+
+#radio1 {
+  display: none;
+}
+#radio1:checked ~ .sliders {
+  transform: translateX(0);
+}
+#radio1:checked + .btn {
+  background-color: #007bff;
+}
+
+#radio2 {
+  display: none;
+}
+#radio2:checked ~ .sliders {
+  transform: translateX(-20%);
+}
+#radio2:checked + .btn {
+  background-color: #007bff;
+}
+
+#radio3 {
+  display: none;
+}
+#radio3:checked ~ .sliders {
+  transform: translateX(-40%);
+}
+#radio3:checked + .btn {
+  background-color: #007bff;
+}
+
+#radio4 {
+  display: none;
+}
+#radio4:checked ~ .sliders {
+  transform: translateX(-60%);
+}
+#radio4:checked + .btn {
+  background-color: #007bff;
+}
+
+#radio5 {
+  display: none;
+}
+#radio5:checked ~ .sliders {
+  transform: translateX(-80%);
+}
+#radio5:checked + .btn {
+  background-color: #007bff;
+}
+
+.testimonials-nav {
+  text-align: center;
+  background: #ecf5ff;
 }
 
 .btn {
@@ -758,63 +844,14 @@ main .bg-home .img-home img {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  display: inline-block;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 
-#radio1 {
-  display: block;
-  background-color: grey;
-}
-#radio1:checked ~ .sliders {
-  transform: translateX(0);
-}
-#radio1:checked + #but1 {
-  background-color: red;
-}
-
-#radio2 {
-  display: block;
-}
-#radio2:checked ~ .sliders {
-  transform: translateX(-550px);
-}
-#radio2:checked + .btn {
-  background-color: #007bff;
-}
-
-#radio3 {
-  display: block;
-}
-#radio3:checked ~ .sliders {
-  transform: translateX(-1100px);
-}
-#radio3:checked + .btn {
-  background-color: #007bff;
-}
-
-#radio4 {
-  display: block;
-}
-#radio4:checked ~ .sliders {
-  transform: translateX(-1650px);
-}
-#radio4:checked + .btn {
-  background-color: red;
-}
-
-#radio5 {
-  display: block;
-}
-#radio5:checked ~ .sliders {
-  transform: translateX(-2200px);
-}
-#radio5:checked.btn {
-  background-color: #007bff;
-}
-
-.testimonials-nav {
-  text-align: center;
-  background: #ecf5ff;
+#botones-slider {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 /* PRUEBA DE BRANCH */
