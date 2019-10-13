@@ -1,35 +1,133 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700&display=swap');
 
+
 #about{
 
-    padding-top: 30px;
-    font-family: "Open Sans", sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 20px 7%;
+    height: 100%;
 
-    
     .about-subtit{
-            width: 43%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Open Sans", sans-serif;
+
+        p {
+            width: 45%;
             height: 60px;
             margin: auto;
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 400;
+            color: #556877;
             line-height: 22px; 
             margin-top: -10px;
             text-align: center;
             letter-spacing: 0.1px;
             padding-bottom: 40px;
-            font-family: "Open Sans";
-            color: black;
+                
+        }    
     }
 
-    .container-part-1{
-        display: flex;
+    .block-superior{
+        display:flex;
         flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+        align-items: flex-end;
+
+        .about-paragraph{
+            display:flex;
+            flex-direction: column;
+            width: 50%;
+            font-family: "Open Sans", sans-serif;
+
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                color: black;
+                line-height: 25px;
+            }
+
+            .item{
+                display:flex;
+                flex-direction: row;
+                align-items: center;
+
+                .item-icon{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    i{
+                        color: #007bff;
+                        height: 65px;
+                        width: 65px;
+                        border-radius: 50%;
+                        border: 2px solid #007bff;
+                        transition: 0.3s all ease-in;
+                        font-size: 25px;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        line-height: 61px;
+
+                        &:hover{
+
+                            background: #007bff;
+                            color: white;
+
+                        }
+                    
+                    }
+                }
+
+                .item-txt{
+
+                    padding-left: 18px;
+
+                    .item-tit{
+                        text-decoration:none;
+                        color: black;
+                        font-family: "Montserrat", sans-serif;
+
+                    }
+                
+                    .item-paragraph{
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 25px;
+
+                        
+                        article{
+                            margin-top: -17px;
+                        }
+
+
+                    }
+                }
+
+            
+
+
+            }
+
+            
+        }
     }
-}
+
+
+
+        
+
+
+    .img-about{
+        width: 50%;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    }
+
