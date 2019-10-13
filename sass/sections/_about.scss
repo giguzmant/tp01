@@ -29,14 +29,15 @@
             padding-bottom: 40px;
                 
         }    
+
     }
 
-    .block-superior{
+    .block-superior {
         display:flex;
         flex-direction: row;
         align-items: flex-end;
 
-        .about-paragraph{
+        .about-1st-part{
             display:flex;
             flex-direction: column;
             width: 50%;
@@ -107,18 +108,92 @@
                     }
                 }
 
-            
-
-
             }
 
-            
         }
     }
 
+    .middle-block{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 53px;
+
+        .about-2nd-part{
+            display:flex;
+            flex-direction: column;
+            width: 50%;
+            padding-left: 30px;
+
+            .about-2nd-tit{
+
+                font-family: "Montserrat", sans-serif;
+                font-size: 23px;
+                font-weight: 400;
+                
+                h4{
+                    margin-bottom:0px;
+                }
+                
+
+            }
+
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                color: black;
+                line-height: 25px;
+                font-family: "Open Sans", sans-serif;
+               
+            }
+        }
 
 
-        
+    }
+
+    .final-block{
+
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+
+        padding-top: 53px;
+        padding-bottom: 40px;
+
+        .about-third-part{
+
+            display:flex;
+            flex-direction: column;
+            width: 50%;
+            padding-right: 30px;
+
+            .about-3rd-tit{
+
+                font-family: "Montserrat", sans-serif;
+                font-size: 23px;
+                font-weight: 400;
+
+                h4{
+                    margin-bottom:0px;
+                }
+            }
+
+            p{
+
+                font-size: 16px;
+                font-weight: 400;
+                color: black;
+                line-height: 25px;
+                font-family: "Open Sans", sans-serif;
+            }
+
+        }
+
+    }
+    
+
+
+
 
 
     .img-about{
@@ -126,6 +201,7 @@
 
         img{
             width: 100%;
+            z-index: 1000;
         }
     }
 

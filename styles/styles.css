@@ -430,29 +430,29 @@ main .bg-home .img-home img {
   flex-direction: row;
   align-items: flex-end;
 }
-#about .block-superior .about-paragraph {
+#about .block-superior .about-1st-part {
   display: flex;
   flex-direction: column;
   width: 50%;
   font-family: "Open Sans", sans-serif;
 }
-#about .block-superior .about-paragraph p {
+#about .block-superior .about-1st-part p {
   font-size: 16px;
   font-weight: 400;
   color: black;
   line-height: 25px;
 }
-#about .block-superior .about-paragraph .item {
+#about .block-superior .about-1st-part .item {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-#about .block-superior .about-paragraph .item .item-icon {
+#about .block-superior .about-1st-part .item .item-icon {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#about .block-superior .about-paragraph .item .item-icon i {
+#about .block-superior .about-1st-part .item .item-icon i {
   color: #007bff;
   height: 65px;
   width: 65px;
@@ -465,31 +465,87 @@ main .bg-home .img-home img {
   flex-direction: column;
   line-height: 61px;
 }
-#about .block-superior .about-paragraph .item .item-icon i:hover {
+#about .block-superior .about-1st-part .item .item-icon i:hover {
   background: #007bff;
   color: white;
 }
-#about .block-superior .about-paragraph .item .item-txt {
+#about .block-superior .about-1st-part .item .item-txt {
   padding-left: 18px;
 }
-#about .block-superior .about-paragraph .item .item-txt .item-tit {
+#about .block-superior .about-1st-part .item .item-txt .item-tit {
   text-decoration: none;
   color: black;
   font-family: "Montserrat", sans-serif;
 }
-#about .block-superior .about-paragraph .item .item-txt .item-paragraph {
+#about .block-superior .about-1st-part .item .item-txt .item-paragraph {
   font-size: 15px;
   font-weight: 400;
   line-height: 25px;
 }
-#about .block-superior .about-paragraph .item .item-txt .item-paragraph article {
+#about .block-superior .about-1st-part .item .item-txt .item-paragraph article {
   margin-top: -17px;
+}
+#about .middle-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 53px;
+}
+#about .middle-block .about-2nd-part {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 30px;
+}
+#about .middle-block .about-2nd-part .about-2nd-tit {
+  font-family: "Montserrat", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+}
+#about .middle-block .about-2nd-part .about-2nd-tit h4 {
+  margin-bottom: 0px;
+}
+#about .middle-block .about-2nd-part p {
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  line-height: 25px;
+  font-family: "Open Sans", sans-serif;
+}
+#about .final-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 53px;
+  padding-bottom: 40px;
+}
+#about .final-block .about-third-part {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-right: 30px;
+}
+#about .final-block .about-third-part .about-3rd-tit {
+  font-family: "Montserrat", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+}
+#about .final-block .about-third-part .about-3rd-tit h4 {
+  margin-bottom: 0px;
+}
+#about .final-block .about-third-part p {
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  line-height: 25px;
+  font-family: "Open Sans", sans-serif;
 }
 #about .img-about {
   width: 50%;
 }
 #about .img-about img {
   width: 100%;
+  z-index: 1000;
 }
 
 #why-choose-us {
