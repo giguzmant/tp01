@@ -34,6 +34,10 @@ body {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
   font-family: "Montserrat", sans-serif;
   color: #273c50;
@@ -699,7 +703,7 @@ main .bg-home .img-home img {
   flex-direction: column;
   justify-content: center;
   width: 320px;
-  height: 100%;
+  height: auto;
   border-radius: 10px;
   background-color: #00458f;
   margin: auto;
@@ -717,6 +721,7 @@ main .bg-home .img-home img {
   font-family: "Open Sans";
   font-size: 15px;
   line-height: 20px;
+  text-align: center;
 }
 #why-choose-us .why-card .why-anchor {
   text-decoration: none;

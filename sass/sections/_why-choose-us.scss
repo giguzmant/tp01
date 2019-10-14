@@ -45,7 +45,7 @@
         flex-direction: column;
         justify-content: center;
         width: 320px;
-        height: 100%;
+        height: auto;
         border-radius: 10px;
         background-color: $why-bg-card ;
         margin: auto;
@@ -65,6 +65,7 @@
             font-family: "Open Sans";
             font-size: 15px;
             line-height: 20px;
+            text-align: center;
         }
 
         .why-anchor{
