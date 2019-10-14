@@ -418,7 +418,7 @@ main .bg-home .img-home img {
   margin: auto;
   font-size: 14px;
   font-weight: 400;
-  color: #556877;
+  color: #556783;
   line-height: 22px;
   margin-top: -10px;
   text-align: center;
@@ -439,7 +439,7 @@ main .bg-home .img-home img {
 #about .block-superior .about-1st-part p {
   font-size: 16px;
   font-weight: 400;
-  color: black;
+  color: #444444;
   line-height: 25px;
 }
 #about .block-superior .about-1st-part .item {
@@ -453,7 +453,7 @@ main .bg-home .img-home img {
   justify-content: center;
 }
 #about .block-superior .about-1st-part .item .item-icon i {
-  color: #007bff;
+  color: #017bfe;
   height: 65px;
   width: 65px;
   border-radius: 50%;
@@ -474,13 +474,14 @@ main .bg-home .img-home img {
 }
 #about .block-superior .about-1st-part .item .item-txt .item-tit {
   text-decoration: none;
-  color: black;
+  color: #283d50;
   font-family: "Montserrat", sans-serif;
 }
 #about .block-superior .about-1st-part .item .item-txt .item-paragraph {
   font-size: 15px;
   font-weight: 400;
   line-height: 25px;
+  color: #444444;
 }
 #about .block-superior .about-1st-part .item .item-txt .item-paragraph article {
   margin-top: -17px;
@@ -501,6 +502,7 @@ main .bg-home .img-home img {
   font-family: "Montserrat", sans-serif;
   font-size: 23px;
   font-weight: 400;
+  color: #464748;
 }
 #about .middle-block .about-2nd-part .about-2nd-tit h4 {
   margin-bottom: 0px;
@@ -508,7 +510,7 @@ main .bg-home .img-home img {
 #about .middle-block .about-2nd-part p {
   font-size: 16px;
   font-weight: 400;
-  color: black;
+  color: #444444;
   line-height: 25px;
   font-family: "Open Sans", sans-serif;
 }
@@ -529,6 +531,7 @@ main .bg-home .img-home img {
   font-family: "Montserrat", sans-serif;
   font-size: 23px;
   font-weight: 400;
+  color: #464748;
 }
 #about .final-block .about-third-part .about-3rd-tit h4 {
   margin-bottom: 0px;
@@ -536,7 +539,7 @@ main .bg-home .img-home img {
 #about .final-block .about-third-part p {
   font-size: 16px;
   font-weight: 400;
-  color: black;
+  color: #444444;
   line-height: 25px;
   font-family: "Open Sans", sans-serif;
 }
@@ -546,6 +549,118 @@ main .bg-home .img-home img {
 #about .img-about img {
   width: 100%;
   z-index: 1000;
+}
+@media (min-width: 1024px) {
+  #about .block-superior {
+    align-items: center;
+  }
+  #about .middle-block {
+    align-items: flex-start;
+  }
+  #about .middle-block .img-about {
+    padding-top: 31px;
+  }
+  #about .final-block {
+    align-items: center;
+    padding-top: 20px;
+  }
+  #about .final-block .img-about {
+    padding-top: 31px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #about .about-subtit p {
+    width: 70%;
+  }
+  #about .block-superior {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #about .block-superior .img-about {
+    width: 90%;
+  }
+  #about .block-superior .about-1st-part {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding-left: 0px;
+  }
+  #about .middle-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #about .middle-block .img-about {
+    width: 90%;
+  }
+  #about .middle-block .about-2nd-part {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding-left: 0px;
+  }
+  #about .final-block {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #about .final-block .img-about {
+    width: 90%;
+  }
+  #about .final-block .about-third-part {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding-right: 0px;
+  }
+}
+@media (max-width: 767px) {
+  #about .about-subtit p {
+    width: 90%;
+  }
+  #about .block-superior {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #about .block-superior .img-about {
+    width: 85%;
+  }
+  #about .block-superior .about-1st-part {
+    display: flex;
+    flex-direction: column;
+    width: 102%;
+    padding-left: 0px;
+  }
+  #about .middle-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #about .middle-block .img-about {
+    width: 85%;
+  }
+  #about .middle-block .about-2nd-part {
+    display: flex;
+    flex-direction: column;
+    width: 102%;
+    padding-left: 0px;
+  }
+  #about .final-block {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #about .final-block .img-about {
+    width: 85%;
+  }
+  #about .final-block .about-third-part {
+    display: flex;
+    flex-direction: column;
+    width: 102%;
+    padding-left: 25px;
+  }
 }
 
 #why-choose-us {
