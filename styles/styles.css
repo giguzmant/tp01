@@ -748,6 +748,8 @@ main .bg-home .img-home img {
   padding-top: 30px;
   padding-bottom: 70px;
   font-family: "Open Sans", sans-serif;
+  padding: 20px 7%;
+  height: 100%;
 }
 #services .subtit {
   width: 45%;
@@ -774,7 +776,7 @@ main .bg-home .img-home img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 350px;
+  width: 300px;
   height: auto;
   border-radius: 10px;
   background-color: #ffffff;
@@ -814,6 +816,25 @@ main .bg-home .img-home img {
 #services .cards .card:hover {
   transform: translateY(-7px);
   transition: all 0.3s ease-in-out;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #services {
+    padding: 20px 0%;
+  }
+  #services .subtit {
+    width: 60%;
+  }
+}
+@media (max-width: 767px) {
+  #services {
+    padding: 20px 10%;
+  }
+  #services .subtit {
+    width: 90%;
+  }
+  #services .cards .card {
+    width: 100%;
+  }
 }
 
 #portfolio {
