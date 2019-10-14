@@ -7,8 +7,10 @@
     padding-top: 30px;
     padding-bottom: 70px;
     font-family: "Open Sans", sans-serif;
+    padding: 20px 7%;
+    height: 100%;
+
     
-   
     .subtit{
         width: 45%;
         height: 60px;
@@ -38,7 +40,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            width: 350px;
+            width: 300px;
             height: auto;
             border-radius: 10px;
             background-color: #ffffff;
@@ -97,4 +99,33 @@
        
 
     }
+
+    @include tablet{
+        .subtit{
+            width: 60%;
+        }
+        padding: 20px 0%;
+
+    }
+
+    @include phone{
+
+        .subtit{
+            width: 90%;
+        }
+
+        padding: 20px 10%;
+
+        .cards{
+            
+            .card{
+                width: 100%;
+            }
+        }
+
+        
+
+    }
+
+   
 }
