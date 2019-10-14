@@ -10,8 +10,7 @@
     .why-tit{
         h1{
             color: #ffffff;
-            /* PRUEBA */ 
-
+    
         }
     }
 
@@ -36,6 +35,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+
 
         .why-card{
             background-color: #00458f;
@@ -106,7 +106,123 @@
         
     }
 
-    
+    .data-container{
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom: 35px;
+
+        .why-data{
+
+            .why-num{
+
+                font-family: "Montserrat", sans-serif;
+                text-align: center;
+                font-size: 33px;
+
+                h2{
+                    margin-bottom: 0px;
+                }
+            }
+
+            .why-data-tit{
+                
+                text-align: center;
+                font-family: "Open Sans", sans-serif;
+                font-size: 15px;
+                font-weight: 400;
+                color: #bfddfe;
+
+                p{
+                    margin-top: 5px;
+                }
+
+            }
+        }
+
+
+
+
+
+    }
+
+    @include desktop{
+
+        padding: 20px 3%;
+    }
+
+    @include tablet{
+
+        padding: 20px 10%;
+
+        .why-container-cards{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .why-card{
+
+                width: 100%;
+            }
+
+        }
+
+        .data-container{
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .why-data{
+                display: flex;
+                flex-direction: column;
+                width: 40%;
+            }
+
+        }
+
+
+    }
+
+
+    @include phone {
+
+        padding: 20px 7%;
+
+        .why-container-cards{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .why-card{
+
+                width: 100%;
+            }
+
+        }
+
+        .data-container{
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            .why-data{
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+            }
+
+        }
+
+
+
+    }
     
     
 
