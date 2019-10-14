@@ -4,12 +4,12 @@
     align-items:center;
 }
 
-#team-titles{
+.team-titles{
     display:flex;
     flex-direction: column;
     align-items: center;
 }
-#team-sub{
+.team-sub{
     font-family: $open-font;
     font-size:15px;
     text-align:center;
