@@ -1,17 +1,368 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,600,700&display=swap');
 
+
 #about{
 
-    padding-top: 30px;
-    font-family: "Open Sans", sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 20px 7%;
+    height: 100%;
 
-    
-    .subtit{
-        width: 50%;
+    .about-subtit{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Open Sans", sans-serif;
+
+        p {
+            width: 45%;
+            height: 60px;
+            margin: auto;
+            font-size: 14px;
+            font-weight: 400;
+            color: $body-sub-color;
+            line-height: 22px; 
+            margin-top: -10px;
+            text-align: center;
+            letter-spacing: 0.1px;
+            padding-bottom: 40px;
+                
+        }    
+
     }
-}
+
+    .block-superior {
+        display:flex;
+        flex-direction: row;
+        align-items: flex-end;
+
+        .about-1st-part{
+            display:flex;
+            flex-direction: column;
+            width: 50%;
+            font-family: "Open Sans", sans-serif;
+
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                color: $about-text-color;
+                line-height: 25px;
+            }
+
+            .item{
+                display:flex;
+                flex-direction: row;
+                align-items: center;
+
+                .item-icon{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    i{
+                        color: $about-icon-color;
+                        height: 65px;
+                        width: 65px;
+                        border-radius: 50%;
+                        border: 2px solid #007bff;
+                        transition: 0.3s all ease-in;
+                        font-size: 25px;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        line-height: 61px;
+
+                        &:hover{
+
+                            background: #007bff;
+                            color: white;
+
+                        }
+                    
+                    }
+                }
+
+                .item-txt{
+
+                    padding-left: 18px;
+
+                    .item-tit{
+                        text-decoration:none;
+                        color: $about-icon-tit-color;
+                        font-family: "Montserrat", sans-serif;
+
+                    }
+                
+                    .item-paragraph{
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 25px;
+                        color: $about-icon-color-text;
+
+                        
+                        article{
+                            margin-top: -17px;
+                        }
+
+
+                    }
+                }
+
+            }
+
+        }
+    }
+
+    .middle-block{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        padding-top: 53px;
+
+        .about-2nd-part{
+            display:flex;
+            flex-direction: column;
+            width: 50%;
+            padding-left: 30px;
+
+            .about-2nd-tit{
+
+                font-family: "Montserrat", sans-serif;
+                font-size: 23px;
+                font-weight: 400;
+                color: $about-tit;
+                
+                h4{
+                    margin-bottom:0px;
+                }
+                
+
+            }
+
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                color: $about-text-color;
+                line-height: 25px;
+                font-family: "Open Sans", sans-serif;
+               
+            }
+        }
+
+
+    }
+
+    .final-block{
+
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+
+        padding-top: 53px;
+        padding-bottom: 40px;
+
+        .about-third-part{
+
+            display:flex;
+            flex-direction: column;
+            width: 50%;
+            padding-right: 30px;
+
+            .about-3rd-tit{
+
+                font-family: "Montserrat", sans-serif;
+                font-size: 23px;
+                font-weight: 400;
+                color: $about-tit;
+
+                h4{
+                    margin-bottom:0px;
+                }
+            }
+
+            p{
+
+                font-size: 16px;
+                font-weight: 400;
+                color: $about-text-color;     
+                line-height: 25px;
+                font-family: "Open Sans", sans-serif;
+            }
+
+        }
+
+    }
+    
+    .img-about{
+        width: 50%;
+
+        img{
+            width: 100%;
+            z-index: 1000;
+        }
+    }
+
+    @include desktop{
+        .block-superior{
+            align-items: center;
+        }
+
+        .middle-block{
+            align-items: flex-start;
+
+            .img-about{
+                padding-top: 31px;
+            }
+        }
+
+        .final-block{
+            align-items: center;
+            padding-top: 20px;
+
+            
+            .img-about{
+                padding-top:31px;
+                
+            }
+        }
+    }
+
+
+    @include tablet{
+        
+        .about-subtit{
+
+            p{
+                width: 70%;
+            }
+        }
+
+        .block-superior{
+            display:flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            
+
+            .img-about{
+                width: 90%;;
+            }
+
+            .about-1st-part{
+                display:flex;
+                flex-direction: column;
+                width: 85%;
+                padding-left: 0px;
+            }
+        }
+
+
+        .middle-block{
+
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+
+            .img-about{
+                width:90%;
+            }
+
+            .about-2nd-part{
+                display:flex;
+                flex-direction: column;
+                width: 85%;
+                padding-left: 0px;
+
+            }
+
+        }
+
+        .final-block{
+
+            display:flex;
+            flex-direction: column-reverse;
+            align-items: center;
+
+            .img-about{
+                width: 90%;
+            }
+
+            .about-third-part{
+                display:flex;
+                flex-direction: column;
+                width: 85%;
+                padding-right: 0px;
+
+            }
+        }
+
+    }
+
+    @include phone{
+
+        .about-subtit{
+
+            p{
+                width: 90%;
+            }
+        }
+
+        .block-superior{
+            display:flex;
+            flex-direction: column-reverse;
+            align-items: center;
+
+            .img-about{
+                width: 85%;;
+            }
+
+            .about-1st-part{
+                display:flex;
+                flex-direction: column;
+                width: 102%;
+                padding-left: 0px;
+            }
+        }
+
+
+        .middle-block{
+
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+
+            .img-about{
+                width:85%;
+            }
+
+            .about-2nd-part{
+                display:flex;
+                flex-direction: column;
+                width: 102%;
+                padding-left: 0px;
+            }
+
+        }
+
+        .final-block{
+
+            display:flex;
+            flex-direction: column-reverse;
+            align-items: center;
+
+            .img-about{
+                width: 85%;
+            }
+
+            .about-third-part{
+                display:flex;
+                flex-direction: column;
+                width: 102%;
+                padding-left: 25px;
+            }
+        }
+
+    }
+
+    }
+
