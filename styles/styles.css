@@ -498,6 +498,8 @@ main .bg-home .img-home img {
   padding-top: 30px;
   padding-bottom: 70px;
   font-family: "Open Sans", sans-serif;
+  padding: 20px 7%;
+  height: 100%;
 }
 #services .subtit {
   width: 45%;
@@ -524,7 +526,7 @@ main .bg-home .img-home img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 350px;
+  width: 300px;
   height: auto;
   border-radius: 10px;
   background-color: #ffffff;
@@ -564,6 +566,25 @@ main .bg-home .img-home img {
 #services .cards .card:hover {
   transform: translateY(-7px);
   transition: all 0.3s ease-in-out;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #services {
+    padding: 20px 0%;
+  }
+  #services .subtit {
+    width: 60%;
+  }
+}
+@media (max-width: 767px) {
+  #services {
+    padding: 20px 10%;
+  }
+  #services .subtit {
+    width: 90%;
+  }
+  #services .cards .card {
+    width: 100%;
+  }
 }
 
 #portfolio {
@@ -611,7 +632,6 @@ main .bg-home .img-home img {
   color: #fff;
 }
 
-/* PRUEBA DE BRANCH */
 .portfolio-img {
   box-sizing: border-box;
   height: 250px;
@@ -633,7 +653,7 @@ main .bg-home .img-home img {
   width: 100%;
   object-fit: cover;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .portfolio-img {
     max-width: 50%;
   }
@@ -709,7 +729,7 @@ main .bg-home .img-home img {
   flex-direction: column;
   box-sizing: border-box;
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   #portfolio-wrap {
     flex-wrap: wrap;
     margin: 15px;
@@ -724,5 +744,7 @@ main .bg-home .img-home img {
     height: 1000px;
   }
 }
+
+/* PRUEBA DE BRANCH */
 
 /*# sourceMappingURL=styles.css.map */
