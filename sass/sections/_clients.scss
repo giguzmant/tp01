@@ -1,0 +1,53 @@
+#clients{
+    background-color: $clients-bg-color;
+    box-shadow: inset 0px 0px 12px 0px rgba(0,0,0,0.1);
+    display:flex;
+    justify-content: center;
+    padding-bottom:80px;
+    margin-top:60px;
+}
+
+.client-logo{
+    background-color:#fff;
+    border:1px solid $clients-bg-color;
+    width:90%;
+    height:160px;
+    box-sizing:border-box;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    img{
+        width:70%;
+        object-fit: contain;
+        transition: transform 0.5s ease-in-out;
+        &:hover{
+            transform: scale(1.2)
+        }
+    }
+    @include tablet{
+        width:35%;
+    }
+    @include desktop{
+        width: 25%;
+    }
+}
+
+.clients-wrap{
+    display:flex;
+    flex-direction: column;
+    box-sizing:border-box;
+    align-items: center;
+        @include tablet{
+            flex-flow: column wrap;
+            height:500px;
+            width:100%;
+        } 
+        @include desktop{
+            flex-flow:row wrap;
+            justify-content:center;
+            align-items: center;
+            width:80%;
+            height:300px;
+            margin:auto;
+            }
+}

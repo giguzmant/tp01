@@ -948,13 +948,13 @@ main .bg-home .img-home img {
   align-items: center;
 }
 
-#team-titles {
+.team-titles {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#team-sub {
+.team-sub {
   font-family: "Open-sans", sans-serif;
   font-size: 15px;
   text-align: center;
@@ -965,12 +965,12 @@ main .bg-home .img-home img {
   margin-top: 0px;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  #team-sub {
+  .team-sub {
     width: 80%;
   }
 }
 @media (min-width: 1024px) {
-  #team-sub {
+  .team-sub {
     width: 80%;
   }
 }
@@ -1078,6 +1078,68 @@ main .bg-home .img-home img {
     margin: auto;
     height: 300px;
     align-items: flex-start;
+  }
+}
+
+#clients {
+  background-color: #e6f0fb;
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+  margin-top: 60px;
+}
+
+.client-logo {
+  background-color: #fff;
+  border: 1px solid #e6f0fb;
+  width: 90%;
+  height: 160px;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.client-logo img {
+  width: 70%;
+  object-fit: contain;
+  transition: transform 0.5s ease-in-out;
+}
+.client-logo img:hover {
+  transform: scale(1.2);
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .client-logo {
+    width: 35%;
+  }
+}
+@media (min-width: 1024px) {
+  .client-logo {
+    width: 25%;
+  }
+}
+
+.clients-wrap {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .clients-wrap {
+    flex-flow: column wrap;
+    height: 500px;
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .clients-wrap {
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 300px;
+    margin: auto;
   }
 }
 
