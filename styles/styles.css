@@ -670,15 +670,16 @@ main .bg-home .img-home img {
 #why-choose-us {
   background-color: #004a99;
   color: #ffffff;
-  padding-top: 30px;
-  padding-bottom: 70px;
+  padding: 20px 7%;
+  height: 100%;
 }
 #why-choose-us .why-tit h1 {
   color: #ffffff;
+  /* PRUEBA */
 }
 #why-choose-us .why-subtit {
   color: #ffffff;
-  width: 45%;
+  width: 50%;
   height: 60px;
   margin: auto;
   font-size: 15px;
@@ -692,60 +693,60 @@ main .bg-home .img-home img {
 }
 #why-choose-us .why-container-cards {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  align-content: center;
 }
-#why-choose-us .why-card {
+#why-choose-us .why-container-cards .why-card {
+  background-color: #00458f;
+  height: 295px;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 320px;
-  height: auto;
-  border-radius: 10px;
-  background-color: #00458f;
-  margin: auto;
-  text-align: center;
-}
-#why-choose-us .why-card .why-icon {
-  font-size: 50px;
-  color: #bfddfe;
-}
-#why-choose-us .why-card .why-card-tit {
-  font-family: "Montserrat";
-  font-size: 20px;
-}
-#why-choose-us .why-card .why-card-subtit {
-  font-family: "Open Sans";
-  font-size: 15px;
-  line-height: 20px;
-  text-align: center;
-}
-#why-choose-us .why-card .why-anchor {
-  text-decoration: none;
-  color: #ffffff;
-  font-family: "Montserrat";
-  font-weight: 700;
-}
-#why-choose-us .data-container {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  width: 100%;
-  align-content: center;
-  text-align: center;
+  margin: 30px;
+  transition: 0.3s all ease-in;
+}
+#why-choose-us .why-container-cards .why-card .why-icon {
+  color: #bfddfe;
+  font-size: 50px;
+}
+#why-choose-us .why-container-cards .why-card .why-card-txt {
+  padding: 4%;
+}
+#why-choose-us .why-container-cards .why-card .why-card-txt .why-card-tit {
   font-family: "Montserrat", sans-serif;
+  font-size: 19px;
 }
-#why-choose-us .data-container .why-num {
-  font-family: "Montserrat";
+#why-choose-us .why-container-cards .why-card .why-card-txt .why-card-tit h3 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+#why-choose-us .why-container-cards .why-card .why-card-txt .why-card-subtit {
+  display: flex;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #bfddfe;
+}
+#why-choose-us .why-container-cards .why-card .why-card-txt .why-card-subtit p {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+#why-choose-us .why-container-cards .why-card .why-card-txt .why-anchor {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 16px;
 }
-#why-choose-us .data-container .why-data-tit {
-  font-size: 15px;
+#why-choose-us .why-container-cards .why-card:hover {
+  background-color: #003b7a;
 }
 
 #services {
@@ -824,7 +825,7 @@ main .bg-home .img-home img {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #services {
-    padding: 20px 0%;
+    padding: 20px 5%;
   }
   #services .subtit {
     width: 60%;
