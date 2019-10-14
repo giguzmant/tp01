@@ -942,6 +942,145 @@ main .bg-home .img-home img {
   margin-top: 60px;
 }
 
+#team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#team-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#team-sub {
+  font-family: "Open-sans", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 60px;
+  color: #556783;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #team-sub {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  #team-sub {
+    width: 80%;
+  }
+}
+
+.team-img {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.team-img .team-foto {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-img .team-foto img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .team-img {
+    max-width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  .team-img {
+    max-width: 20%;
+  }
+}
+
+.team-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 62, 128, 0.7);
+  border-radius: 50%;
+}
+.team-info h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.team-info h4 {
+  margin: 0;
+  color: #fff;
+  font-size: 13px;
+  font-family: "Open-sans", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+}
+.team-info div {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  margin-top: 10px;
+}
+.team-info div .fab:before {
+  font-size: 17px;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+}
+.team-info:hover {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.media:hover .fab:before {
+  color: #007bff;
+}
+
+#team-wrap {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #team-wrap {
+    flex-flow: column wrap;
+    margin: auto;
+    height: 1000px;
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  #team-wrap {
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: auto;
+    height: 300px;
+    align-items: flex-start;
+  }
+}
+
 /* PRUEBA DE BRANCH */
 
 /*# sourceMappingURL=styles.css.map */
