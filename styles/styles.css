@@ -498,6 +498,8 @@ main .bg-home .img-home img {
   padding-top: 30px;
   padding-bottom: 70px;
   font-family: "Open Sans", sans-serif;
+  padding: 20px 7%;
+  height: 100%;
 }
 #services .subtit {
   width: 45%;
@@ -520,28 +522,28 @@ main .bg-home .img-home img {
   width: 100%;
   align-content: center;
 }
-#services .card {
+#services .cards .card {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 400px;
+  width: 300px;
   height: auto;
   border-radius: 10px;
   background-color: #ffffff;
   margin: 20px;
   padding: 20px;
 }
-#services .card .card-icon {
+#services .cards .card .card-icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: absolute;
 }
-#services .card .card-icon img {
+#services .cards .card .card-icon img {
   width: 56px;
   height: auto;
 }
-#services .card .tit-card {
+#services .cards .card .tit-card {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -549,11 +551,11 @@ main .bg-home .img-home img {
   text-decoration: none;
   margin-left: 75px;
 }
-#services .card .tit-card:hover {
+#services .cards .card .tit-card:hover {
   color: #007bff;
   transition: all 0.3s;
 }
-#services .card .card-text {
+#services .cards .card .card-text {
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -561,16 +563,30 @@ main .bg-home .img-home img {
   margin-left: 75px;
   margin-top: -10px;
 }
-#services .card:hover {
+#services .cards .card:hover {
   transform: translateY(-7px);
   transition: all 0.3s ease-in-out;
 }
-
-@media screen and (min-width: 960px) {
-  .cards {
+@media (min-width: 768px) and (max-width: 1023px) {
+  #services {
+    padding: 20px 0%;
+  }
+  #services .subtit {
+    width: 60%;
+  }
+}
+@media (max-width: 767px) {
+  #services {
+    padding: 20px 10%;
+  }
+  #services .subtit {
+    width: 90%;
+  }
+  #services .cards .card {
     width: 100%;
   }
 }
+
 #portfolio {
   display: flex;
   flex-direction: column;
@@ -614,6 +630,119 @@ main .bg-home .img-home img {
 }
 .portfolio-menu-anchor:hover {
   color: #fff;
+}
+
+.portfolio-img {
+  box-sizing: border-box;
+  height: 250px;
+  overflow: hidden;
+  margin: 10px;
+  position: relative;
+}
+.portfolio-img .img {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio-img .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .portfolio-img {
+    max-width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .portfolio-img {
+    max-width: 30%;
+  }
+}
+
+.portfolio-info {
+  position: absolute;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 49, 102, 0.5);
+  border-radius: 8px;
+}
+.portfolio-info h4 {
+  margin: 0;
+}
+.portfolio-info p {
+  text-align: center;
+  color: #fff;
+  font-family: "Open-sans", sans-serif;
+}
+.portfolio-info div {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+.portfolio-info div span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #017bfe;
+  text-align: center;
+  cursor: pointer;
+}
+.portfolio-info div span:hover {
+  background-color: #3495fe;
+  transition: background-color 0.5s ease;
+}
+.portfolio-info div .fas:before {
+  font-size: 17px;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+}
+.portfolio-info:hover {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.port-name {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+  transition: color 0.5s ease-in-out;
+}
+.port-name:hover {
+  color: #017bfe;
+  transition: color 0.5s ease-in-out;
+}
+
+#portfolio-wrap {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #portfolio-wrap {
+    flex-wrap: wrap;
+    margin: 15px;
+    height: 1400px;
+  }
+}
+@media (min-width: 1024px) {
+  #portfolio-wrap {
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 30px;
+    height: 1000px;
+  }
 }
 
 /* PRUEBA DE BRANCH */

@@ -7,8 +7,10 @@
     padding-top: 30px;
     padding-bottom: 70px;
     font-family: "Open Sans", sans-serif;
+    padding: 20px 7%;
+    height: 100%;
+
     
-   
     .subtit{
         width: 45%;
         height: 60px;
@@ -33,74 +35,97 @@
         width: 100%;
         align-content: center;
 
-    }
 
-    .card{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 400px;
-        height: auto;
-        border-radius: 10px;
-        background-color: #ffffff;
-        margin: 20px;
-        padding: 20px;
-    
-
-        .card-icon{
-            display:flex;
+        .card{
+            display: flex;
             flex-direction: column;
             justify-content: center;
-            position: absolute;
-            
-            img{
-                width: 56px;
-                height: auto;
-               
-            
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            background-color: #ffffff;
+            margin: 20px;
+            padding: 20px;
+        
+    
+            .card-icon{
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                position: absolute;
+                
+                img{
+                    width: 56px;
+                    height: auto; 
+                
+                }
+             }
+    
+             
+             .tit-card{
+                
+                font-family: "Montserrat", sans-serif;
+                font-weight: 800;
+                font-size: 18px;
+                color: #000000;
+                text-decoration: none;
+                margin-left: 75px;
+    
+                &:hover{
+                    color: #007bff;
+                    transition: all 0.3s;
+                }
+    
             }
-         }
-
-         
-         .tit-card{
-            
-            font-family: "Montserrat", sans-serif;
-            font-weight: 800;
-            font-size: 18px;
-            color: #000000;
-            text-decoration: none;
-            margin-left: 75px;
-
+    
+            .card-text{
+                
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 22px;
+                color: #444444;
+                margin-left: 75px;
+                margin-top: -10px;
+            }
+    
             &:hover{
-                color: #007bff;
-                transition: all 0.3s;
+                transform: translateY(-7px);
+                transition: all 0.3s ease-in-out;
             }
-
-        }
-
-        .card-text{
             
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 22px;
-            color: #444444;
-            margin-left: 75px;
-            margin-top: -10px;
+            
         }
 
-        &:hover{
-            transform: translateY(-7px);
-            transition: all 0.3s ease-in-out;
+       
+
+    }
+
+    @include tablet{
+        .subtit{
+            width: 60%;
         }
-        
-        
+        padding: 20px 0%;
+
     }
 
-}
+    @include phone{
 
-@media screen and (min-width: 960px) { 
-    .cards{
-        width: 100%;
+        .subtit{
+            width: 90%;
+        }
+
+        padding: 20px 10%;
+
+        .cards{
+            
+            .card{
+                width: 100%;
+            }
+        }
+
+        
+
     }
 
+   
 }
