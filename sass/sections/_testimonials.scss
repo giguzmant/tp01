@@ -1,5 +1,6 @@
 #testimonials{
     background-color: $testimonials-bg-color;
+    box-shadow: inset 0px 0px 12px 0px rgba(0,0,0,0.1);
     display:flex;
     justify-content: center;
     @include desktop{
