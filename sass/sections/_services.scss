@@ -34,6 +34,7 @@
         align-items: center;
         width: 100%;
         align-content: center;
+        margin-bottom: 35px;
 
 
         .card{
@@ -100,11 +101,14 @@
 
     }
 
+
+    
+
     @include tablet{
         .subtit{
             width: 60%;
         }
-        padding: 20px 0%;
+        padding: 20px 5%;
 
     }
 
