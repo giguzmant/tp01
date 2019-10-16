@@ -1,11 +1,35 @@
+#info-cols{
+    @include tablet{
+    display:flex;
+    flex-flow: column wrap;
+     }
+   @include desktop{
+    flex-flow:row wrap;
+    height:400px;
+     }
+}
 #map{
     width:90%; 
     height:400px;
     background-color:grey;
-    margin:auto;
     display:flex;
     justify-content: center;
+    margin:auto;
+    @include desktop{
+        width:50%;
+        justify-content: flex-start;
+        margin:0;
+    } 
 }
+
+ #ctc-col2{
+     @include desktop{
+        width:50%;
+        display:flex;
+        height:400px;
+        
+        }
+ }
 
 .ctc-info{
     font-size:14px;
@@ -15,12 +39,81 @@
     line-height:28px;
     margin-bottom:30px;
     padding-bottom: 10px;
-    padding-left:36px;
-
+    padding-left:15px;
+    text-align:left;
+    line-height:28px;
+    margin-top:0;
+    
 }
 
 .fa-map-marker-alt, .fa-envelope, .fa-phone-alt{
     &:before{
         color: $contact-color-icon;
-        font-size: 32px;    }
+        font-size: 28px;    }
 }
+
+#send-msg{
+    background-color: $contact-color-icon;
+    border:none;
+    border-radius: 20px;
+    font-family:$open-font;
+    font-size:16px;
+    text-align:center;
+    width:150px;
+    height:32px;
+    color:#fff; 
+    transition: background-color 0.3s ease;
+    cursor:pointer;
+    &:hover{
+        background-color: darken($contact-color-icon,10%);
+        transition: background-color 0.3s ease;
+    }
+
+}
+
+.ctc-form{
+    display:block;
+    width:90%;
+    box-sizing: border-box;
+    font-family:$open-font;
+    font-size:16px;
+    font-weight:400;
+    line-height:30px;
+    margin:auto;
+    margin-bottom:16px;
+    padding-left:15px;
+    padding-top:3px;
+    border:1px solid #cccccc;
+   }
+
+form{
+       margin:auto;
+       width:100%;
+       text-align: center;
+   }
+#ctc-direction{
+    display: inline-block;
+    @include tablet{
+        display:flex;
+        flex-flow:row wrap;
+       justify-content: space-around;
+       margin-top:20px;
+    }
+    @include desktop{
+       display:flex;
+       flex-flow:row wrap;
+       justify-content: space-around;
+       margin-top:20px;
+    }
+   }
+
+ .ctc-info-written{
+     display:flex;
+     height:50px;
+     justify-content: flex-start;
+     margin-left:15px;
+     margin-top:16px;
+     margin-bottom:16px;
+
+ }
+
