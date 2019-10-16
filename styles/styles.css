@@ -1476,6 +1476,31 @@ main .bg-home .img-home img {
   }
 }
 
+#map {
+  width: 90%;
+  height: 400px;
+  background-color: grey;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.ctc-info {
+  font-size: 14px;
+  font-family: "Open-sans", sans-serif;
+  color: #273c50;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  padding-left: 36px;
+}
+
+.fa-map-marker-alt:before, .fa-envelope:before, .fa-phone-alt:before {
+  color: #007bff;
+  font-size: 32px;
+}
+
 /* PRUEBA DE BRANCH */
 
 /*# sourceMappingURL=styles.css.map */

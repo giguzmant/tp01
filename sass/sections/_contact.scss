@@ -1,0 +1,26 @@
+#map{
+    width:90%; 
+    height:400px;
+    background-color:grey;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+}
+
+.ctc-info{
+    font-size:14px;
+    font-family:$open-font;
+    color: $contact-color-text;
+    font-weight:400;
+    line-height:28px;
+    margin-bottom:30px;
+    padding-bottom: 10px;
+    padding-left:36px;
+
+}
+
+.fa-map-marker-alt, .fa-envelope, .fa-phone-alt{
+    &:before{
+        color: $contact-color-icon;
+        font-size: 32px;    }
+}
