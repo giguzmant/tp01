@@ -157,7 +157,7 @@ header {
                         .mobile {
                             background-color: rgba(19, 39, 57, 0.8);
                             height: 100%;
-                            width: 260px;
+                            width: 280px;
                             position: fixed;
                             top: 0;
                             left: -220px;
@@ -167,6 +167,9 @@ header {
                             margin: 0;
                             list-style: none;
                             transition: all 0.5s;
+                            overflow: scroll;
+
+                            
 
                                 li {
                                     padding: 10px 20px;
@@ -194,9 +197,89 @@ header {
 
                                 }
 
-                              
+        
+
+                                .deepdropdownmobile{
+                                    list-style: none;
+                                    padding-left: 0;
+                                    padding-bottom: 0;
+                                    max-height: 0;
+                                    overflow: hidden;
+                                    transition: max-height 0.2s ease;
+                                    z-index: 9;
 
 
+
+                                    li{
+                                        padding-right: 0;
+    
+                                    }
+
+                                }
+
+                                .dropdownmobile{
+                                    list-style: none;
+                                    padding-left: 16px;
+                                    max-height: 0;
+                                    overflow: hidden;
+                                    transition: max-height 0.2s ease;
+                                    z-index: 9;
+
+
+                                
+                                }
+                                
+                                .checkbox{
+                                    position: absolute;
+                                    right: 17px;
+                                    bottom:279px;
+                                    display:none;
+                                }
+
+                                .checkbox-1{
+                                    position:absolute;
+                                    right: 17px;
+                                    display: none;
+                                }
+
+                                #checkbox:checked + .label>.deepdropdownmobile{
+                                    max-height: 244px;
+                                    transition: max-height 0.2s ease;
+
+                                }
+
+                                #checkbox-1:checked + .label-1>.dropdownmobile{
+                                    max-height: 244px;
+                                    transition: max-height 0.2s ease;
+
+                                }
+
+                                .button {
+                                    position: relative;
+                                    left: 71px;
+                                    font-size: 17px;
+                                    color:#fff;
+                                    bottom: 1px;
+                                    font-weight: 700;
+
+
+                                    &:hover{
+                                        color: #007bff;
+                                    }
+                                }
+
+                                .button-1{
+                                    position: relative;
+                                    color: #fff;
+                                    font-size: 17px;
+                                    font-weight: 700;
+                                    left: 119px;
+
+                                    &:hover{
+                                        color: #007bff;
+                                    }
+                                }
+                                
                         }
 
                        .close {
@@ -208,6 +291,7 @@ header {
                                     font-size: 30px;
                                 }
                         }    
+                       
                         
                         
                 }
@@ -225,7 +309,7 @@ header {
        }
 
 
-
+      
 
 
 
