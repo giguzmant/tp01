@@ -4,20 +4,20 @@
 #why-choose-us{
     background-color: $why-bg-color;
     color: $why-color;
-    padding-top: 30px;
-    padding-bottom: 70px;
+    padding: 20px 7%;
+    height: 100%;
 
     .why-tit{
         h1{
             color: #ffffff;
-
+    
         }
     }
 
     .why-subtit{
 
             color: #ffffff;
-            width: 45%;
+            width: 50%;
             height: 60px;
             margin: auto;
             font-size: 15px;
@@ -27,83 +27,202 @@
             text-align: center;
             letter-spacing: 0.1px;
             padding-bottom: 40px;
-            font-family: "Open Sans";
-        
+            font-family: "Open Sans"; 
     }
 
     .why-container-cards{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: row;
         justify-content: center;
-        align-items:center;
-        width: 100%;
-        align-content: center;
-    }
-
-    .why-card{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 320px;
-        height: 100%;
-        border-radius: 10px;
-        background-color: $why-bg-card ;
-        margin: auto;
-        text-align: center;
-
-        .why-icon{
-            font-size: 50px;
-            color: $why-icon-card-color;
-        }
-
-        .why-card-tit{
-            font-family: "Montserrat";
-            font-size: 20px;
-        }
-
-        .why-card-subtit{
-            font-family: "Open Sans";
-            font-size: 15px;
-            line-height: 20px;
-        }
-
-        .why-anchor{
-            text-decoration: none;
-            color: #ffffff;
-            font-family: "Montserrat";
-            font-weight: 700;
-        }
+        align-items: center;
 
 
-    }
-    .data-container{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items:center;
-        width: 100%;
-        align-content: center;
-        text-align: center;
-        font-family: "Montserrat", sans-serif;
+        .why-card{
+            background-color: #00458f;
+            height: 295px;
+            width: 300px;
+            text-align: center;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 30px;
+            transition: 0.3s all ease-in;
 
-        .why-num{
-            font-family: "Montserrat";
-            font-weight: 700;
-            font-size: 30px;
-        }
+            .why-icon{
+                color: #bfddfe;
+                font-size: 50px;
+                
 
-        
-        .why-data-tit{
-            font-size: 15px;
+            }
 
-        }
+            .why-card-txt{
 
+                padding: 4%;
 
-        
-            
-
-    }
+                .why-card-tit{
+                
+                    font-family: "Montserrat", sans-serif;
+                    font-size: 19px;
+                    
+                    h3{
+                        margin-top:0px;
+                        margin-bottom: 15px;
+                    }
     
+                }
+
+                .why-card-subtit{
+
+                    display: flex;
+                    align-items: center;
+                    font-family: "Open Sans", sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 23px;
+                    color: #bfddfe;
+                    
+                    p{
+                        margin-top: 0px;
+                        margin-bottom: 30px;
+                    }
+                }
+
+                .why-anchor{
+                    text-decoration: none;
+                     color: #ffffff;
+                     font-family: "Open Sans", sans-serif;
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+            }
+
+            &:hover{
+                background-color:  #003b7a;
+            }
+        }
+
+        
+    }
+
+    .data-container{
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-bottom: 35px;
+
+        .why-data{
+
+            .why-num{
+
+                font-family: "Montserrat", sans-serif;
+                text-align: center;
+                font-size: 33px;
+
+                h2{
+                    margin-bottom: 0px;
+                }
+            }
+
+            .why-data-tit{
+                
+                text-align: center;
+                font-family: "Open Sans", sans-serif;
+                font-size: 15px;
+                font-weight: 400;
+                color: #bfddfe;
+
+                p{
+                    margin-top: 5px;
+                }
+
+            }
+        }
+
+
+
+
+
+    }
+
+    @include desktop{
+
+        padding: 20px 3%;
+    }
+
+    @include tablet{
+
+        padding: 20px 10%;
+
+        .why-container-cards{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .why-card{
+
+                width: 100%;
+            }
+
+        }
+
+        .data-container{
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .why-data{
+                display: flex;
+                flex-direction: column;
+                width: 40%;
+            }
+
+        }
+
+
+    }
+
+
+    @include phone {
+
+        padding: 20px 7%;
+
+        .why-container-cards{
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .why-card{
+
+                width: 100%;
+            }
+
+        }
+
+        .data-container{
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            .why-data{
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+            }
+
+        }
+
+
+
+    }
     
     
 
