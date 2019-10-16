@@ -1,0 +1,134 @@
+#team{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.team-titles{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team-sub{
+    font-family: $open-font;
+    font-size:15px;
+    text-align:center;
+    padding-bottom:60px;
+    color: $body-sub-color;
+    font-weight:400;
+    text-align:center;
+    margin-top:0px;
+    @include tablet{
+        width:80%;
+    }
+    @include desktop{
+        width: 80%;
+    }
+}
+.team-img{
+    box-sizing:border-box;
+    max-width:100%;
+    margin: 10px;
+    overflow: hidden; 
+    position:relative;
+        .team-foto{
+            overflow:hidden;
+            height:100%;
+            width:100%;
+            border-radius: 50%;
+            display:flex;
+            align-items:center;
+            justify-content: center;
+             img{
+                 height:100%;
+                 width:100%;
+                object-fit: cover;
+            }
+        }
+    @include tablet{
+        max-width:80%;
+    }
+    @include desktop{
+        max-width:20%;
+    }
+}
+
+.team-info{
+    position: absolute;
+    top:0;
+    left:0;
+    opacity:0;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    height:100%;
+    width:100%;
+    background-color:rgba(0,62,128,.7);
+    border-radius:50%;
+    h3{
+        margin:0;
+        color:#fff;
+        font-size:18px;
+        font-weight:700;
+        font-family: $menu-font;
+        text-align:center;
+    }
+    h4{
+        margin:0;
+        color:#fff;
+        font-size:13px;
+        font-family: $open-font;
+        font-style:italic;
+        font-weight:300;
+    }
+    div{
+        display:flex;
+        justify-content: space-around;
+        width:40%;
+        margin-top:10px;
+        .fab{
+            &:before{
+                font-size: 17px;
+                color:#fff;
+                line-height:30px;
+                text-align:center;
+            }
+        
+        }
+    }
+    &:hover{
+        opacity:1;
+        transition: opacity 0.5s ease;
+    }
+}
+
+.media{
+    &:hover{
+      .fab{
+          &:before{
+              color:$team-hover-bg-color;
+          }
+      }
+    }
+}
+
+#team-wrap{
+    display:flex;
+    flex-direction: column;
+    box-sizing:border-box;
+        @include tablet{
+            flex-flow: column wrap;
+            margin:auto;
+            height:1000px;
+            width:100%;
+
+        } 
+        @include desktop{
+            flex-flow:row wrap;
+            justify-content:center;
+            margin:auto;
+            height:300px;
+            align-items: flex-start;
+        }
+}
