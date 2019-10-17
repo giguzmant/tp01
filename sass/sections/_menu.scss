@@ -35,109 +35,6 @@ header {
                     
                         }
 
-                .menu {
-
-                    font-size: 14px;
-                    font-weight: 500;
-                    width: 630px;
-                    font-family: "Montserrat", sans-serif;
-                   
-                        ul {
-                            display: flex;
-                            justify-content: space-between;
-                            padding: 0;
-                            list-style: none;
-                            
-                                 a {
-                                    color: #0047a2;;
-                                    text-decoration: none;
-                                        
-                                    &:hover {
-
-                                        color: #477bff;
-
-                                             }
-                                    }                                                  
-                            }
-
-                        .dropdown{
-
-                            display:inline-block;
-                            position: relative;
-    
-                            ul{
-
-                                display:none;
-                                background-color: #fff;
-                                font-size: 13px;
-                                width: 150px;
-                                height: 195px;
-                                line-height: 40px;
-                                box-shadow: 0px 0px 10px rgb(112, 112, 112);
-                                padding-top: 10px;
-                                padding-bottom:10px;
-                                position: relative;
-                                left: -15px;
-
-                                .fa{
-
-                                    right: -30px;
-                                    position: absolute;
-                                    top: 14px;
-                                }
-                                
-                                a{
-                                    margin-left: 20px;
-                                    
-                                }
-                            }
-    
-                            &:hover {
-                                cursor: pointer;
-                                transition: 0.3s all ease-in;
-    
-    
-                                ul{
-                                    display: block;
-                                    position: absolute;
-                                   
-                                }
-                            }
-
-                            .deepdropdown{
-
-                                display:inline-block;
-                                position: relative;
-
-                                ul{
-                                    display:none;
-                                    background-color: #fff;
-                                    font-size: 13px;
-                                    width: 170px;
-                                    height: 195px;
-                                    line-height: 40px;
-                                    left: 120px;
-                                    right: 30px;
-                                    box-shadow: 0px 0px 10px rgb(112, 112, 112);                                    top: 10px;
-                                    position: relative;
-                                }
-
-                                &:hover {
-                                    cursor: pointer;
-        
-        
-                                    ul{
-                                        display: block;
-                                        position: absolute;
-                                    }
-                                }
-
-                            }
-
-                        }
-
-                }
-
                 .menu-mobile {
                     top: 0;
                     left: 0;
@@ -260,14 +157,14 @@ header {
                                         color: #74b5fc;
                                     }
                                 }
-
-                                
+                     
                         }
 
                        .close {
                             position: absolute;
                             top: 19px;
-                            right: 10%;
+                            right: 7%;
+
                                 a {
                                     color: #fff;
                                     font-size: 30px;
@@ -284,6 +181,111 @@ header {
                 #menu-mobile:target .close {
                     display: block;
                 } 
+
+
+                .menu {
+
+                    font-size: 14px;
+                    font-weight: 500;
+                    width: 630px;
+                    font-family: "Montserrat", sans-serif;
+                   
+                        ul {
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 0;
+                            list-style: none;
+                            
+                                 a {
+                                    color: #0047a2;;
+                                    text-decoration: none;
+                                        
+                                    &:hover {
+
+                                        color: #477bff;
+
+                                             }
+                                    }                                                  
+                            }
+
+                        .dropdown{
+
+                            display:inline-block;
+                            position: relative;
+    
+                            ul{
+
+                                display:none;
+                                background-color: #fff;
+                                font-size: 13px;
+                                width: 150px;
+                                height: 195px;
+                                line-height: 40px;
+                                box-shadow: 0px 0px 10px rgb(112, 112, 112);
+                                padding-top: 10px;
+                                padding-bottom:10px;
+                                position: relative;
+                                left: -15px;
+
+                                .fa{
+
+                                    right: -30px;
+                                    position: absolute;
+                                    top: 14px;
+                                }
+                                
+                                a{
+                                    margin-left: 20px;
+                                    
+                                }
+                            }
+    
+                            &:hover {
+                                cursor: pointer;
+                                transition: 0.3s all ease-in;
+    
+    
+                                ul{
+                                    display: block;
+                                    position: absolute;
+                                   
+                                }
+                            }
+
+                            .deepdropdown{
+
+                                display:inline-block;
+                                position: relative;
+
+                                ul{
+                                    display:none;
+                                    background-color: #fff;
+                                    font-size: 13px;
+                                    width: 170px;
+                                    height: 195px;
+                                    line-height: 40px;
+                                    left: 120px;
+                                    right: 30px;
+                                    box-shadow: 0px 0px 10px rgb(112, 112, 112);                                   
+                                    top: 10px;
+                                    position: relative;
+                                }
+
+                                &:hover {
+                                    cursor: pointer;
+        
+        
+                                    ul{
+                                        display: block;
+                                        position: absolute;
+                                    }
+                                }
+
+                            }
+
+                        }
+
+                }
           
        }
       
@@ -301,7 +303,7 @@ header {
     nav {
          padding: 20px 10%;
 
-         .logo {
+         .nav-bar {
 
             width: 100%;
             display: flex;
