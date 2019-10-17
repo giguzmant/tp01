@@ -1,19 +1,27 @@
-@import '../common/variables';
-@import '../common/mixins';
-
-
-main{
-
-    .bg-home{
+.bg-home{
         background-image: url(../img/intro-bg.png);
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         height: 600px;
-        padding: 20px 10%;
         background-repeat: no-repeat;
         background-size: 100% 621px;
+        
+    
+
+        .img-home{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 63px;
+    
+                img{
+                    max-width: 100%;
+                    
+                }
+           
+           }
 
         div{
             height: 300px;
@@ -39,14 +47,14 @@ main{
             }
     
             .button-home{
-                display:flex;
-                flex-direction: row;
+
                 width: 380px;
-                justify-content: space-between;
                 height: auto;
                 margin-left: 30px;
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
                 
-    
                 .button-home-1{
                     color: #ffffff;
                     background: #007bff;
@@ -103,60 +111,55 @@ main{
             }    
         }
     
-        .img-home{
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            margin-top: 63px;
-    
-                img{
-                    max-width: 100%;
-                    
-                }
-           
-           }
         }
     
     
-    }
+
 
 
     
-    @include desktop {
-       main{
-            .bg-home {
-                padding: 10px 5%;
+@include desktop {
+
+     .bg-home {
+
+        padding: 10px 5%;
+        width: 100%;
+                
             }
         
-    } /* DESKTOP */
+    
 }
     
-    @include tablet {
-        main {
-            .bg-home {
-                display: flex;
-                flex-direction: column-reverse;
-                background-size: 100% 697px;
-                background-repeat: no-repeat;
-                transform: translateY(40px);
-                padding: 41px 0 73px 0;
+@include tablet {
+        
+        .bg-home {
 
-                    div {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        margin-right: 0;
+            display: flex;
+            flex-direction: column-reverse;
+            background-size: 100% 697px;
+            background-repeat: no-repeat;
+            transform: translateY(61px);
+            padding: 41px 0 73px 0;
+            width: 110%;
+                div {
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 0;
                       
-                            p {
-                                text-align: center;
-                                margin-top: 0px;
-                                padding-left: 0px;
+                        p {
+
+                            text-align: center;
+                            margin-top: 0px;
+                            padding-left: 0px;
+
                             }
                     }
+
                     .img-home {
                         display: flex;
-                        align-items: center; 
-                        
+                        align-items: center;
                         height: auto;
                         
                             img{
@@ -164,47 +167,53 @@ main{
                                 height: auto;
                             }
                         }
+
                         .button-home{
                         margin-left: 0px;
+
                         }
 
 
                     }
-            }
+            
         } 
     
+
+@include phone{
+            
+    .bg-home {
+        display: flex;
+        flex-direction: column-reverse;
+        transform: translateY(61px);
+        padding: 41px 0 73px 0;
+        height: 547px;
+        width: 100%;
     
-        @include phone{
-            main {
-                .bg-home {
-                    display: flex;
-                    flex-direction: column-reverse;
-                    transform: translateY(74px);
-                     padding: 41px 0 73px 0;
-                     height: 547px;
-    
-                        div {
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 0;
+                margin-bottom: 23px;
+
+                    p {
+                        text-align: center;
+                        font-size: 36px;
+                        padding-bottom: -6px;
+                        justify-content: center;
+                        margin-left: 0;
+
+                        }
+                                
+                        .button-home {
                             display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            margin-right: 0;
-                            margin-bottom: 23px;
-                                p {
-                                    text-align: center;
-                                    font-size: 36px;
-                                    padding-bottom: -6px;
-                                    justify-content: center;
-                                    margin-left: 0;
-                                }
-                                .button-home {
-                                    display: flex;
-                                    flex-direction: column;
-                                    margin-top: 5px;
-                                    margin-left: 0px;
+                            flex-direction: column;
+                            margin-top: 5px;
+                            margin-left: 0px;
                                     
-    
-                                        button {
-                                            margin: 5px;
+                                button {
+                                    margin: 5px;
+
                                         } 
     
                                         .button-home-2{
@@ -212,19 +221,20 @@ main{
                                         }
                                 }
                         }
+
                         .img-home {
                             display: flex;
                             align-items: center; 
                             margin-top: 120px;
-                        margin-right: 0;
-                        height: auto;
+                            margin-right: 0;
+                            height: auto;
     
-                            img{
-                                width: 400px;
-                                height: auto;
+                                img{
+                                    width: 400px;
+                                    height: auto;
                             }
                         }    
                 }
-            }
-        } /* PHONE*/
+            
+        } 
         

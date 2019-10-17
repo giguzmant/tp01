@@ -260,24 +260,32 @@ header nav .menu .dropdown .deepdropdown:hover ul {
     display: none;
   }
 }
-main .bg-home {
+.bg-home {
   background-image: url(../img/intro-bg.png);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 600px;
-  padding: 20px 10%;
   background-repeat: no-repeat;
   background-size: 100% 621px;
 }
-main .bg-home div {
+.bg-home .img-home {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 63px;
+}
+.bg-home .img-home img {
+  max-width: 100%;
+}
+.bg-home div {
   height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-main .bg-home div p {
+.bg-home div p {
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
   font-weight: 800;
@@ -286,20 +294,20 @@ main .bg-home div p {
   z-index: 100;
   padding-left: 28px;
 }
-main .bg-home div p .underline {
+.bg-home div p .underline {
   text-decoration: underline;
   color: #74b5fc;
   display: block;
 }
-main .bg-home div .button-home {
-  display: flex;
-  flex-direction: row;
+.bg-home div .button-home {
   width: 380px;
-  justify-content: space-between;
   height: auto;
   margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-main .bg-home div .button-home .button-home-1 {
+.bg-home div .button-home .button-home-1 {
   color: #ffffff;
   background: #007bff;
   border: 1px solid #007bff;
@@ -311,16 +319,16 @@ main .bg-home div .button-home .button-home-1 {
   font-weight: 900;
   text-align: center;
 }
-main .bg-home div .button-home .button-home-1 a {
+.bg-home div .button-home .button-home-1 a {
   text-decoration: none;
   color: #ffffff;
 }
-main .bg-home div .button-home .button-home-1:hover {
+.bg-home div .button-home .button-home-1:hover {
   border: 2px solid #ffffff;
   background: #1445b3;
   transition: 0.5s all ease-in-out;
 }
-main .bg-home div .button-home .button-home-2 {
+.bg-home div .button-home .button-home-2 {
   border-radius: 20px;
   width: 180px;
   height: 43px;
@@ -332,113 +340,104 @@ main .bg-home div .button-home .button-home-2 {
   color: #ffffff;
   border: 2px solid #ffffff;
 }
-main .bg-home div .button-home .button-home-2 a {
+.bg-home div .button-home .button-home-2 a {
   text-decoration: none;
   color: #ffffff;
 }
-main .bg-home div .button-home .button-home-2:hover {
+.bg-home div .button-home .button-home-2:hover {
   background: #007bff;
   color: #ffffff;
   border: 0px;
   transition: 0.5s all ease-in-out;
 }
-main .bg-home .img-home {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  margin-top: 63px;
-}
-main .bg-home .img-home img {
-  max-width: 100%;
-}
 
 @media (min-width: 1024px) {
-  main .bg-home {
+  .bg-home {
     padding: 10px 5%;
+    width: 100%;
   }
-
-  /* DESKTOP */
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-  main .bg-home {
+  .bg-home {
     display: flex;
     flex-direction: column-reverse;
     background-size: 100% 697px;
     background-repeat: no-repeat;
-    transform: translateY(40px);
+    transform: translateY(61px);
     padding: 41px 0 73px 0;
+    width: 110%;
   }
-  main .bg-home div {
+  .bg-home div {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 0;
   }
-  main .bg-home div p {
+  .bg-home div p {
     text-align: center;
     margin-top: 0px;
     padding-left: 0px;
   }
-  main .bg-home .img-home {
+  .bg-home .img-home {
     display: flex;
     align-items: center;
     height: auto;
   }
-  main .bg-home .img-home img {
+  .bg-home .img-home img {
     width: 450px;
     height: auto;
   }
-  main .bg-home .button-home {
+  .bg-home .button-home {
     margin-left: 0px;
   }
 }
 @media (max-width: 767px) {
-  main .bg-home {
+  .bg-home {
     display: flex;
     flex-direction: column-reverse;
-    transform: translateY(74px);
+    transform: translateY(61px);
     padding: 41px 0 73px 0;
     height: 547px;
+    width: 100%;
   }
-  main .bg-home div {
+  .bg-home div {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 0;
     margin-bottom: 23px;
   }
-  main .bg-home div p {
+  .bg-home div p {
     text-align: center;
     font-size: 36px;
     padding-bottom: -6px;
     justify-content: center;
     margin-left: 0;
   }
-  main .bg-home div .button-home {
+  .bg-home div .button-home {
     display: flex;
     flex-direction: column;
     margin-top: 5px;
     margin-left: 0px;
   }
-  main .bg-home div .button-home button {
+  .bg-home div .button-home button {
     margin: 5px;
   }
-  main .bg-home div .button-home .button-home-2 {
+  .bg-home div .button-home .button-home-2 {
     margin-right: 0px;
   }
-  main .bg-home .img-home {
+  .bg-home .img-home {
     display: flex;
     align-items: center;
     margin-top: 120px;
     margin-right: 0;
     height: auto;
   }
-  main .bg-home .img-home img {
+  .bg-home .img-home img {
     width: 400px;
     height: auto;
   }
 }
-/* PHONE*/
 #about {
   padding: 20px 7%;
   height: 100%;

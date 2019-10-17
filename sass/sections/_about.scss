@@ -199,9 +199,12 @@
         }
     }
 
-    @include desktop{
-        .block-superior{
-            align-items: center;
+@include desktop{
+
+    .block-superior{
+
+        align-items: center;
+
         }
 
         .middle-block{
@@ -225,12 +228,13 @@
     }
 
 
-    @include tablet{
+@include tablet{
         
-        .about-subtit{
+    .about-subtit{
 
-            p{
-                width: 70%;
+        p{
+             width: 70%;
+
             }
         }
 
@@ -294,9 +298,9 @@
 
     }
 
-    @include phone{
+@include phone{
 
-        .about-subtit{
+    .about-subtit{
 
             p{
                 width: 90%;
