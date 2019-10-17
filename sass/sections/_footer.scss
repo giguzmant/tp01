@@ -1,0 +1,185 @@
+footer{
+    background-color: $footer-bg-color;
+    h1{
+        color:#fff;
+        @include tablet{
+            text-align:left;
+        }
+        @include desktop{
+            text-align:left;
+        }
+    }
+    p{
+        color:#fff;
+        font-size:13px;
+        font-family:$menu-font;
+        line-height: 2;
+    }
+    h5{
+        color:#fff;
+        font-family:$menu-font;
+        font-size:14px;
+        margin-bottom:30px;
+    }
+    a{
+        text-decoration:none;
+        color: $testimonials-bg-color;
+        font-family: $open-font;
+    }
+    form{
+        display:flex;
+        flex-direction: row;
+        margin-top: 25px;
+    }
+
+}
+
+#footer-desktop{
+    padding-bottom:60px;
+    padding-top:60px;
+    @include desktop{
+        display: flex;
+        flex-flow:column wrap;
+        height:300px;
+        padding-bottom: 40px;
+    }
+}
+.footer-info{
+    width:90%;
+    display:flex;
+    margin:auto;
+    flex-direction: column;
+    box-sizing:border-box;
+    @include tablet{
+        flex-direction:row;
+        height:300px;
+               
+    }
+    @include desktop{
+        flex-flow:column wrap; 
+       width:50%;
+       height:300px;
+       align-items:center;
+       justify-content:space-between;
+
+               
+    }
+
+}
+
+.title{
+    @include tablet{
+        width:50%;
+        }
+    @include desktop{
+        width:40%;
+    }
+}
+.right{
+@include tablet{
+    padding-left:25px;
+     
+}
+}
+
+.desktop{
+    @include desktop{
+        width:65%;
+        padding-left:40px;
+        margin-right:30px;
+        
+    }
+}
+.desktop-2{
+    @include desktop{
+        width:30%;
+    }
+}
+.bottom{
+@include tablet{
+    margin-bottom:50px; 
+}
+}
+
+.ctc-media{
+    background-color: $footer-button-bg-color;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    transition:background-color 0.3s ease;
+    text-align:center;
+    cursor:pointer;
+    margin-top:20px;
+    margin-bottom:20px;
+    &:hover{
+        background-color: darken($footer-button-bg-color, 10%);
+        transition:background-color 0.3s ease;
+    }
+    i{
+        line-height:40px;
+        &before{
+            color:#fff;
+            
+        }
+    }
+   
+}
+.container-media{
+    display:flex;
+    justify-content:space-between;
+    width:40%;
+    @include tablet{
+        width:50%;
+    }
+   @include desktop{
+       width:70%;
+   }
+}
+
+.useful-menu{
+    display:flex;
+    flex-direction: column;
+    a{
+        margin-bottom:15px;
+    }
+}
+
+#subs-mail{
+    border:none;
+    padding-left:6px;
+    line-height:30px;
+    width:65%;
+}
+.subs-but{
+    background-color: $footer-button-bg-color;
+    width:35%;
+    transition:background-color 0.3s ease;
+    text-align:center;
+    cursor:pointer;
+    border:none;
+    color:#fff;
+    line-height:30px;
+    font-family:$open-font;
+    font-size: 14px; 
+    &:hover{
+        background-color: darken($footer-button-bg-color, 10%);
+        transition:background-color 0.3s ease;
+    }
+}
+
+#copyright{
+    background-color: darken($footer-bg-color,15%);
+    padding-top:20px;
+    padding-bottom:20px;
+    h5{
+        font-weight:400;
+        text-align:center;
+    }
+    h6{
+        text-align:center;
+        font-size:13px;
+        font-weight:400;
+        color:#fff;
+        font-family:$open-font;
+    }
+}
