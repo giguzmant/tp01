@@ -1476,6 +1476,12 @@ main .bg-home .img-home img {
   }
 }
 
+#info-cols {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 @media (min-width: 768px) and (max-width: 1023px) {
   #info-cols {
     display: flex;
@@ -1484,8 +1490,23 @@ main .bg-home .img-home img {
 }
 @media (min-width: 1024px) {
   #info-cols {
-    flex-flow: row wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
     height: 400px;
+  }
+}
+
+#ctc-col2 {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  #ctc-col2 {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -1493,23 +1514,10 @@ main .bg-home .img-home img {
   width: 90%;
   height: 400px;
   background-color: grey;
-  display: flex;
-  justify-content: center;
-  margin: auto;
 }
 @media (min-width: 1024px) {
   #map {
     width: 50%;
-    justify-content: flex-start;
-    margin: 0;
-  }
-}
-
-@media (min-width: 1024px) {
-  #ctc-col2 {
-    width: 50%;
-    display: flex;
-    height: 400px;
   }
 }
 
@@ -1570,9 +1578,15 @@ form {
   width: 100%;
   text-align: center;
 }
+@media (min-width: 1024px) {
+  form {
+    margin-top: 0;
+  }
+}
 
 #ctc-direction {
   display: inline-block;
+  margin-left: 20px;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #ctc-direction {
@@ -1587,7 +1601,6 @@ form {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    margin-top: 20px;
   }
 }
 
