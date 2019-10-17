@@ -4,63 +4,61 @@
 
 header {
     position: fixed;
+    box-shadow: 0px 0px 10px rgb(112, 112, 112);
+    background-color: #ffffff;
     top:0;
     height: 80px;
-    box-shadow: 0px 0px 25px rgba(127, 137, 161, 0.3);
-    background-color: #ffffff;
     width: 100%;
     z-index: 1000;
-    transition: 0.5s all ease-out;
 
         nav {
-            padding: 20px 7%;
             display: flex;
-            align-items: center;
+            align-content: center;
             justify-content: space-between;
-          
+            padding: 20px 7%;
+            
+                img {
 
-                .logo {
-                        img {
-                            height: 27px;
+                    height: 27px;
 
-                        }
+                    }
 
-                        .menu-icon {
-                            display: none;
-                                    a {
-                                        color: $menu-color;
-                                        font-size: 27px;
-                                    }
+                    .menu-icon {
+
+                                display: none;
+
+                             a {
+                                color: $menu-color;
+                                 font-size: 27px;
+
+                                }
                     
                         }
-                        .menu-icon:target #menu-overlay {
-                            display: flex;
-                        }
-                }
-                .menu {
-                    font-family: $menu-font;
-                    font-size: $menu-font-size;
-                    font-weight: 500;
-                    width: 550px;
 
+                .menu {
+
+                    font-size: 14px;
+                    font-weight: 500;
+                    width: 630px;
+                    font-family: "Montserrat", sans-serif;
+                   
                         ul {
-                            padding: 0;
-                            list-style: none;
                             display: flex;
                             justify-content: space-between;
-
-                                li {
-                                    
-                                    a {
-                                        color: $menu-color;
-                                        text-decoration: none;
+                            padding: 0;
+                            list-style: none;
+                            
+                                 a {
+                                    color: #0047a2;;
+                                    text-decoration: none;
                                         
-                                            &:hover {
-                                            color: $menu-hover;
-                                          }
-                                        }                                                  
-                                }
-                        }
+                                    &:hover {
+
+                                        color: #477bff;
+
+                                             }
+                                    }                                                  
+                            }
 
                         .dropdown{
 
@@ -68,19 +66,21 @@ header {
                             position: relative;
     
                             ul{
+
                                 display:none;
                                 background-color: #fff;
                                 font-size: 13px;
                                 width: 150px;
                                 height: 195px;
                                 line-height: 40px;
-                                box-shadow: 0px 0px 25px rgba(127, 137, 161, 0.3);
+                                box-shadow: 0px 0px 10px rgb(112, 112, 112);
                                 padding-top: 10px;
                                 padding-bottom:10px;
                                 position: relative;
                                 left: -15px;
 
                                 .fa{
+
                                     right: -30px;
                                     position: absolute;
                                     top: 14px;
@@ -118,8 +118,7 @@ header {
                                     line-height: 40px;
                                     left: 120px;
                                     right: 30px;
-                                    box-shadow: 0px 0px 25px rgba(127, 137, 161, 0.3);
-                                    top: 10px;
+                                    box-shadow: 0px 0px 10px rgb(112, 112, 112);                                    top: 10px;
                                     position: relative;
                                 }
 
@@ -137,67 +136,50 @@ header {
 
                         }
 
-
-
-
-
-
                 }
 
                 .menu-mobile {
-                    background-color: rgba(19, 39, 57, 0.9);;
-                    position: fixed;
                     top: 0;
                     left: 0;
                     z-index: 1;
-                    height: 100%;
+                    height: 200%;
                     width: 100%;
                     display: none;
-
+                    background-color: rgba(18, 40, 59, 0.9);
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    
                         .mobile {
-                            background-color: rgba(19, 39, 57, 0.8);
-                            height: 100%;
-                            width: 280px;
-                            position: fixed;
-                            top: 0;
-                            left: -220px;
-                            z-index: 2;
+                            background-color: rgba(17, 38, 56, 0.8);
                             padding-top: 25px;
                             padding-left: 0;
                             margin: 0;
                             list-style: none;
-                            transition: all 0.5s;
-                            overflow: scroll;
-
-                            
-
+                            transition: 0.5s all ease-in;
+                            overflow: auto;
+                            height: 100%;
+                            width: 280px;
+                            position: fixed;
+                            top: 0;
+                            left: -260px;
+                
                                 li {
-                                    padding: 10px 20px;
-
+                                    margin:6%;
+                                    margin-left: 26px;
+                                    
                                         a {
                                             color: #fff;
                                             font-family: 'Open Sans', sans-serif;
                                             font-weight: 500;
-                                            line-height: 1.5;
                                             text-decoration: none;
                                         }
 
                                         a:hover {
-                                            color: #007bff;
+                                            color: #74b5fc;
+                                            transition: 0.5s all ease-in-out;
                                         }
                                 }
-
-                                .icon-down{
-                                    color: #ffffff;
-                                    font-weight: 1000;
-                                    font-size: 17px;
-                                    position: absolute;
-                                    right: 15px;
-                                    top: 256px;
-
-                                }
-
-        
 
                                 .deepdropdownmobile{
                                     list-style: none;
@@ -207,25 +189,24 @@ header {
                                     overflow: hidden;
                                     transition: max-height 0.2s ease;
                                     z-index: 9;
-
-
+                                    margin-bottom: -5px;
 
                                     li{
                                         padding-right: 0;
     
                                     }
-
+                                  
                                 }
 
                                 .dropdownmobile{
                                     list-style: none;
-                                    padding-left: 16px;
+                                    padding-left: 0;
                                     max-height: 0;
                                     overflow: hidden;
                                     transition: max-height 0.2s ease;
                                     z-index: 9;
-
-
+                                    position: relative;
+                                    bottom: -9px;
                                 
                                 }
                                 
@@ -249,7 +230,7 @@ header {
                                 }
 
                                 #checkbox-1:checked + .label-1>.dropdownmobile{
-                                    max-height: 244px;
+                                    max-height: 429px;
                                     transition: max-height 0.2s ease;
 
                                 }
@@ -264,7 +245,7 @@ header {
 
 
                                     &:hover{
-                                        color: #007bff;
+                                        color: #74b5fc;
                                     }
                                 }
 
@@ -276,9 +257,10 @@ header {
                                     left: 119px;
 
                                     &:hover{
-                                        color: #007bff;
+                                        color: #74b5fc;
                                     }
                                 }
+
                                 
                         }
 
@@ -291,9 +273,7 @@ header {
                                     font-size: 30px;
                                 }
                         }    
-                       
-                        
-                        
+                                               
                 }
                 #menu-mobile:target {
                     display: block;
@@ -304,17 +284,8 @@ header {
                 #menu-mobile:target .close {
                     display: block;
                 } 
-     
-     
+          
        }
-
-
-      
-
-
-
-
-
       
 }
 
@@ -323,32 +294,28 @@ header {
     .menu-mobile {
         display: none;
     }
-} /* DESKTOP */
+} 
 
 @media (max-width: 992px) {
 
-    header {
+    nav {
+         padding: 20px 10%;
 
-        nav {
+         .logo {
 
-            padding: 20px 10%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
 
-                .logo {
-
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-
-                     .menu-icon {
-                        display: flex;
+            .menu-icon {
+            display: flex;
+            
                     }
-                }
+            }
                 .menu {
                     display: none;    
                 }    
         }
-    }
-
-
+    
 }
 
