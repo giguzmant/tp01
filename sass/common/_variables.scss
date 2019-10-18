@@ -1,10 +1,22 @@
+$montserrat-font: "Montserrat", sans-serif;
+$open-font:'Open-sans', sans-serif;
 
-$menu-font: "Montserrat", sans-serif;
-$menu-font-size: 14px;
-$menu-font-weight: 400;
-$menu-color: #0047a2;
+$menu-desktop-box-shadow: 0px 0px 10px rgb(112, 112, 112);
+$menu-desktop-font-size: 14px;
+$menu-desktop-font-weight: 400;
+$menu-desktop-color: #0047a2;
 $menu-bg-color: #ffffff;
-$menu-hover: #477bff;
+$menu-desktop-hover: #477bff;
+
+$menu-mobile-bg-color-1: rgba(18, 40, 59, 0.9);
+$menu-mobile-bg-color-2: rgba(17, 38, 56, 0.8);
+$menu-mobile-hover-color: #74b5fc;
+$menu-mobile-color: #ffffff;
+$menu-mobile-font-weight: 500;
+
+
+
+
 
 $header-color: #ffffff;
 $header-underline-color: #74b5fc;
@@ -49,7 +61,6 @@ $why-numbers-subtit: #bfddfe;
 
 
 $body-tit-color: #273c50; 
-$open-font:'Open-sans', sans-serif;
 $portfolio-button-color: #017bfe;
 $portfolio-button-bg-color: #ecf5ff;
 $portfolio-button-hover-color: #ecf5ff;

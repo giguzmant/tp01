@@ -1,11 +1,7 @@
-@import '../common/variables';
-@import '../common/mixins';
-
-
 header {
     position: fixed;
-    box-shadow: 0px 0px 10px rgb(112, 112, 112);
-    background-color: #ffffff;
+    box-shadow: $menu-desktop-box-shadow;
+    background-color: $menu-bg-color;
     top:0;
     height: 80px;
     width: 100%;
@@ -27,7 +23,7 @@ header {
                                 display: none;
 
                              a {
-                                color: $menu-color;
+                                color: $menu-desktop-color;
                                  font-size: 27px;
 
                                 }
@@ -41,13 +37,13 @@ header {
                     height: 200%;
                     width: 100%;
                     display: none;
-                    background-color: rgba(18, 40, 59, 0.9);
+                    background-color: $menu-mobile-bg-color-1;
                     position: fixed;
                     top: 0;
                     left: 0;
                     
                         .mobile {
-                            background-color: rgba(17, 38, 56, 0.8);
+                            background-color: $menu-mobile-bg-color-2;
                             padding-left: 0;
                             margin: 0;
                             list-style: none;
@@ -62,16 +58,17 @@ header {
                                 li {
                                     margin:6%;
                                     margin-left: 26px;
+                                    padding: 2px;
                                     
                                         a {
-                                            color: #fff;
-                                            font-family: 'Open Sans', sans-serif;
-                                            font-weight: 500;
+                                            color: $menu-mobile-color;
+                                            font-family: $open-font;
+                                            font-weight: $menu-mobile-font-weight;
                                             text-decoration: none;
                                         }
 
                                         a:hover {
-                                            color: #74b5fc;
+                                            color: $menu-mobile-hover-color;
                                             transition: 0.5s all ease-in-out;
                                         }
                                 }
@@ -82,7 +79,7 @@ header {
                                     padding-bottom: 0;
                                     max-height: 0;
                                     overflow: hidden;
-                                    transition: max-height 0.2s ease;
+                                    transition: max-height 0.6s ease;
                                     z-index: 9;
                                     margin-bottom: -5px;
 
@@ -98,61 +95,62 @@ header {
                                     padding-left: 0;
                                     max-height: 0;
                                     overflow: hidden;
-                                    transition: max-height 0.2s ease;
+                                    transition: max-height 0.6s ease;
                                     z-index: 9;
                                     position: relative;
                                     bottom: -9px;
                                 
                                 }
                                 
-                                .checkbox{
+                                #deepdropdown-mobile{
                                     position: absolute;
                                     right: 17px;
                                     bottom:279px;
-                                    display:none;
-                                }
-
-                                .checkbox-1{
-                                    position:absolute;
-                                    right: 17px;
                                     display: none;
                                 }
 
-                                #checkbox:checked + .label>.deepdropdownmobile{
+                                #dropdown-mobile{
+                                    position:absolute;
+                                    right: 200px;
+                                    display: none;
+                                    
+                                }
+
+                                #deepdropdown-mobile:checked + .label-deep>.deepdropdownmobile{
                                     max-height: 244px;
-                                    transition: max-height 0.2s ease;
+                                    transition: max-height 0.6s ease;
 
                                 }
 
-                                #checkbox-1:checked + .label-1>.dropdownmobile{
+                                #dropdown-mobile:checked + .label-drop>.dropdownmobile{
                                     max-height: 429px;
-                                    transition: max-height 0.2s ease;
+                                    transition: max-height 0.6s ease;
 
                                 }
 
-                                .button {
+                                .icon-deep {
                                     position: relative;
                                     left: 71px;
                                     font-size: 17px;
-                                    color:#fff;
+                                    color: $menu-mobile-color;
                                     bottom: 1px;
                                     font-weight: 700;
 
 
                                     &:hover{
-                                        color: #74b5fc;
+                                        color: $menu-mobile-hover-color;
                                     }
                                 }
 
-                                .button-1{
+                                .icon-drop{
                                     position: relative;
-                                    color: #fff;
+                                    color: $menu-mobile-color;
                                     font-size: 17px;
                                     font-weight: 700;
                                     left: 119px;
 
                                     &:hover{
-                                        color: #74b5fc;
+                                        color: $menu-mobile-hover-color;
                                     }
                                 }
                      
@@ -164,7 +162,7 @@ header {
                             right: 7%;
 
                                 a {
-                                    color: #fff;
+                                    color: $menu-mobile-color;
                                     font-size: 30px;
                                 }
                         }    
@@ -186,7 +184,7 @@ header {
                     font-size: 14px;
                     font-weight: 500;
                     width: 630px;
-                    font-family: "Montserrat", sans-serif;
+                    font-family: $montserrat-font;
                    
                         ul {
                             display: flex;
@@ -195,12 +193,12 @@ header {
                             list-style: none;
                             
                                  a {
-                                    color: #0047a2;;
+                                    color: $menu-desktop-color;
                                     text-decoration: none;
                                         
                                     &:hover {
 
-                                        color: #477bff;
+                                        color: $menu-desktop-hover;
 
                                              }
                                     }                                                  
@@ -214,12 +212,12 @@ header {
                             ul{
 
                                 display:none;
-                                background-color: #fff;
+                                background-color: $menu-bg-color;
                                 font-size: 13px;
                                 width: 150px;
                                 height: 195px;
                                 line-height: 40px;
-                                box-shadow: 0px 0px 10px rgb(112, 112, 112);
+                                box-shadow: $menu-desktop-box-shadow;
                                 padding-top: 10px;
                                 padding-bottom:10px;
                                 position: relative;
@@ -257,14 +255,14 @@ header {
 
                                 ul{
                                     display:none;
-                                    background-color: #fff;
+                                    background-color: $menu-bg-color;
                                     font-size: 13px;
                                     width: 170px;
                                     height: 195px;
                                     line-height: 40px;
                                     left: 120px;
                                     right: 30px;
-                                    box-shadow: 0px 0px 10px rgb(112, 112, 112);                                   
+                                    box-shadow: $menu-desktop-box-shadow;                                   
                                     top: 10px;
                                     position: relative;
                                 }

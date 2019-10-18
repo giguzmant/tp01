@@ -34,36 +34,42 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#team">Team</a></li>
-                    <li><a class="dropdown-mobile" href="#checkbox-1">Drop Down</a>
-                        <label for="checkbox-1" class="button-1">
-                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                        </label>
-                        <input type="checkbox" class="checkbox-1" id="checkbox-1" />
 
-                        <div class="label-1">
-                            <ul class="dropdownmobile">
-                                <li><a href="#">Drop Down 1</a></li>
-                                <li><a href="#">Drop Down 2</a>
-                                    <label for="checkbox" class="button">
-                                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                                    </label>
-                                    <input type="checkbox" class="checkbox" id="checkbox" />
-                                    <div class="label">
-                                        <ul class="deepdropdownmobile" id="deepdropdownmobile">
-                                            <li><a href="#">Deep Drop Down 1</a></li>
-                                            <li><a href="#">Deep Drop Down 2</a></li>
-                                            <li><a href="#">Deep Drop Down 3</a></li>
-                                            <li><a href="#">Deep Drop Down 4</a></li>
-                                            <li><a href="#">Deep Drop Down 5</a></li>
-                                        </ul>
+                    <label for="dropdown-mobile">
+                        <li><a>Drop Down</a>
+                    </label>
+                    <label for="dropdown-mobile" class="icon-drop">
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </label>
+                    <input type="checkbox" id="dropdown-mobile"/>
 
-                                    </div>
-                                </li>
-                                <li><a href="#">Drop Down 3</a></li>
-                                <li><a href="#">Drop Down 4</a></li>
-                                <li><a href="#">Drop Down 5</a></li>
-                            </ul>
-                        </div>
+                    <div class="label-drop">
+                        <ul class="dropdownmobile">
+                            <li><a href="#">Drop Down 1</a></li>
+
+                            <label for="deepdropdown-mobile">
+                                <li><a>Drop Down 2</a>
+                            </label>
+                            <label for="deepdropdown-mobile" class="icon-deep">
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </label>
+                            <input type="checkbox" id="deepdropdown-mobile"/>
+                            <div class="label-deep">
+                                <ul class="deepdropdownmobile">
+                                    <li><a href="#">Deep Drop Down 1</a></li>
+                                    <li><a href="#">Deep Drop Down 2</a></li>
+                                    <li><a href="#">Deep Drop Down 3</a></li>
+                                    <li><a href="#">Deep Drop Down 4</a></li>
+                                    <li><a href="#">Deep Drop Down 5</a></li>
+                                </ul>
+
+                            </div>
+                            </li>
+                            <li><a href="#">Drop Down 3</a></li>
+                            <li><a href="#">Drop Down 4</a></li>
+                            <li><a href="#">Drop Down 5</a></li>
+                        </ul>
+                    </div>
                     </li>
                     <li><a href="#contactus">Contact Us</a></li>
                 </ul>
@@ -863,40 +869,42 @@
         </section>
 
         <section id="contactus">
-                <div>
-                    <h1>Contact Us</h1>
+            <div>
+                <h1>Contact Us</h1>
+            </div>
+            <div id="info-cols">
+                <div id="map"> <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                        frameborder="0" style="border:0; width: 100%; height: 100%;" allowfullscreen></iframe>
                 </div>
-                <div id="info-cols">
-                    <div id="map"> <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 100%;" allowfullscreen></iframe>
+                <div id="ctc-col2">
+                    <div id="ctc-direction">
+                        <div class="ctc-info-written">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h4 class="ctc-info">A108 Adam Street, NY 535022</h4>
+                        </div>
+
+                        <div class="ctc-info-written">
+                            <i class="far fa-envelope"></i>
+                            <h4 class="ctc-info">info@example.com</h4>
+                        </div>
+
+                        <div class="ctc-info-written">
+                            <i class="fas fa-phone-alt"></i>
+                            <h4 class="ctc-info">+1 5589 55488 55</h4>
+                        </div>
                     </div>
-                    <div id="ctc-col2">
-                            <div id="ctc-direction">    
-                                <div class="ctc-info-written">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <h4 class="ctc-info">A108 Adam Street, NY 535022</h4>
-                                </div>
-                    
-                                <div class="ctc-info-written">
-                                    <i class="far fa-envelope"></i>
-                                    <h4 class="ctc-info">info@example.com</h4>
-                                </div>
-                    
-                                <div class="ctc-info-written">
-                                    <i class="fas fa-phone-alt"></i>
-                                    <h4 class="ctc-info">+1 5589 55488 55</h4>
-                                </div>
-                            </div>
-                    
-                            <form>
-                                <input type="text" name="name" placeholder="Your Name" class="ctc-form">
-                                <input type="email" name="email" placeholder="Your Email" class="ctc-form">
-                                <input type="text" name="subject" placeholder="Subject" class="ctc-form">
-                                <textarea name="message" rows="5" placeholder="Message" class="ctc-form"></textarea>
-                                <button type="submit" title="Send Message" id="send-msg">Send Message</button>
-                            </form>
+
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" class="ctc-form">
+                        <input type="email" name="email" placeholder="Your Email" class="ctc-form">
+                        <input type="text" name="subject" placeholder="Subject" class="ctc-form">
+                        <textarea name="message" rows="5" placeholder="Message" class="ctc-form"></textarea>
+                        <button type="submit" title="Send Message" id="send-msg">Send Message</button>
+                    </form>
                 </div>
-            
-    
+
+
         </section>
     </main>
     <footer>
@@ -904,10 +912,11 @@
             <div class="footer-info">
                 <div class="title desktop">
                     <h1>GIRLS</h1>
-                    <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies
-                    darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin
-                    fermentum
-                    leo. Amet volutpat consequat mauris nunc congue.</p>
+                    <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
+                        valies
+                        darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin
+                        fermentum
+                        leo. Amet volutpat consequat mauris nunc congue.</p>
                 </div>
                 <div class="title right desktop-2">
                     <h5>USEFUL LINKS</h5>
@@ -932,15 +941,16 @@
                     <p><strong>Email:</strong> info@example.com</p>
                     <div class="container-media">
                         <span class="ctc-media"><a href="#"><i class="fab fa-twitter"></i></a> </span>
-                    <span class="ctc-media"> <a href="#"><i class="fab fa-facebook-f"></i></a> </span>
-                    <span class="ctc-media"> <a href="#"><i class="fab fa-instagram"></i></i></a> </span>
+                        <span class="ctc-media"> <a href="#"><i class="fab fa-facebook-f"></i></a> </span>
+                        <span class="ctc-media"> <a href="#"><i class="fab fa-instagram"></i></i></a> </span>
                         <span class="ctc-media"><a href="#"><i class="fab fa-linkedin-in"></i></a> </span>
                     </div>
                 </div>
 
                 <div class="title right">
                     <h5>OUR NEWSLETTER</h5>
-                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum dolore
+                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam illum
+                        dolore
                         legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.</p>
                     <form>
                         <input type="email" name="email" id="subs-mail">
@@ -949,14 +959,14 @@
                 </div>
             </div>
         </div>
-    </div>
+        </div>
         <div id="copyright">
             <h5>© Copyright <strong>Wayne Enterprises</strong>. All Rights Reserved </h5>
         </div>
 
-    
 
-           
+
+
     </footer>
 
 </body>
