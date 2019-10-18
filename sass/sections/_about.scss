@@ -9,7 +9,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-family: "Open Sans", sans-serif;
+        font-family: $open-font;
 
         p {
             width: 45%;
@@ -37,7 +37,7 @@
             display:flex;
             flex-direction: column;
             width: 50%;
-            font-family: "Open Sans", sans-serif;
+            font-family: $open-font;
 
             p{
                 font-size: 16px;
@@ -61,7 +61,7 @@
                         height: 65px;
                         width: 65px;
                         border-radius: 50%;
-                        border: 2px solid #007bff;
+                        border: 2px solid $about-icon-color;
                         transition: 0.3s all ease-in;
                         font-size: 25px;
                         display: flex;
@@ -71,8 +71,8 @@
 
                         &:hover{
 
-                            background: #007bff;
-                            color: white;
+                            background: $about-icon-bg-color-hover;
+                            color: $about-icon-color-hover;
 
                         }
                     
@@ -86,7 +86,7 @@
                     .item-tit{
                         text-decoration:none;
                         color: $about-icon-tit-color;
-                        font-family: "Montserrat", sans-serif;
+                        font-family: $montserrat-font;
 
                     }
                 
@@ -124,7 +124,7 @@
 
             .about-2nd-tit{
 
-                font-family: "Montserrat", sans-serif;
+                font-family: $montserrat-font;
                 font-size: 23px;
                 font-weight: 400;
                 color: $about-tit;
@@ -141,7 +141,7 @@
                 font-weight: 400;
                 color: $about-text-color;
                 line-height: 25px;
-                font-family: "Open Sans", sans-serif;
+                font-family: $open-font;
                
             }
         }
@@ -167,7 +167,7 @@
 
             .about-3rd-tit{
 
-                font-family: "Montserrat", sans-serif;
+                font-family: $montserrat-font;
                 font-size: 23px;
                 font-weight: 400;
                 color: $about-tit;
@@ -183,7 +183,7 @@
                 font-weight: 400;
                 color: $about-text-color;     
                 line-height: 25px;
-                font-family: "Open Sans", sans-serif;
+                font-family: $open-font;
             }
 
         }

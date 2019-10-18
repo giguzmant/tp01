@@ -30,7 +30,7 @@
             justify-content: space-between;
     
             p{
-                font-family: "Montserrat", sans-serif;
+                font-family: $montserrat-font;
                 font-size: 48px;
                 font-weight: 800;
                 color: #ffffff;
@@ -40,7 +40,7 @@
     
                 .underline{
                     text-decoration: underline;
-                    color: #74b5fc;
+                    color: $header-underline-color;
                     display: block;
                 }
     
@@ -57,25 +57,25 @@
                 
                 .button-home-1{
                     color: #ffffff;
-                    background: #007bff;
-                    border: 1px solid #007bff;
+                    background: $header-button-1-bg;
+                    border: 1px solid $header-button-1-bg;
                     border-radius: 20px;
                     width: 180px;
                     height: 43px;
-                    font-family: "Montserrat", sans-serif;
+                    font-family: $montserrat-font;
                     font-size: 15px;
                     font-weight: 900;
                     text-align: center;
     
                     a{
                         text-decoration: none;
-                        color: #ffffff;
+                        color: $header-color;
     
                     }
     
                     &:hover{
-                        border: 2px solid #ffffff;
-                        background: #1445b3;
+                        border: 2px solid $header-color;
+                        background: $header-hover-button-bg-color;
                         transition: 0.5s all ease-in-out;
 
                 }
@@ -85,22 +85,22 @@
                     border-radius: 20px;
                     width: 180px;
                     height: 43px;
-                    font-family: "Montserrat", sans-serif;
+                    font-family: $montserrat-font;
                     font-size: 15px;
                     font-weight: 900;
                     text-align: center;
-                    background: #1445b3;
-                    color: #ffffff;
-                    border: 2px solid #ffffff;
+                    background: $header-hover-button-bg-color;
+                    color: $header-color;
+                    border: 2px solid $header-color;
     
                     a{
                         text-decoration: none;
-                        color: #ffffff;
+                        color: $header-color;
             
                     }
     
                     &:hover{
-                        background: #007bff;
+                        background: $header-button-1-bg;
                         color: #ffffff;
                         border: 0px;
                         transition: 0.5s all ease-in-out;

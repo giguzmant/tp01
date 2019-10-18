@@ -36,24 +36,27 @@ header {
                     z-index: 1;
                     height: 200%;
                     width: 100%;
-                    display: none;
+                    visibility: hidden;
                     background-color: $menu-mobile-bg-color-1;
                     position: fixed;
                     top: 0;
                     left: 0;
+                   
+                    
                     
                         .mobile {
                             background-color: $menu-mobile-bg-color-2;
                             padding-left: 0;
                             margin: 0;
                             list-style: none;
-                            transition: 0.5s all ease-in;
                             overflow: auto;
                             height: 100%;
                             width: 280px;
                             position: fixed;
                             top: 0;
                             left: -260px;
+                            transition: left 0.6s ease;
+                            
                 
                                 li {
                                     margin:6%;
@@ -130,7 +133,7 @@ header {
 
                                 .icon-deep {
                                     position: relative;
-                                    left: 71px;
+                                    left: 77px;
                                     font-size: 17px;
                                     color: $menu-mobile-color;
                                     bottom: 1px;
@@ -169,13 +172,17 @@ header {
                                                
                 }
                 #menu-mobile:target {
-                    display: block;
+                    opacity: 1;
+                    transition: left 0.6s ease;
+                
                 } 
                 #menu-mobile:target .mobile {
                     left: 0; 
+                    transition: left 0.6s ease;                   
                 }
                 #menu-mobile:target .close {
                     display: block;
+                    
                 } 
 
 

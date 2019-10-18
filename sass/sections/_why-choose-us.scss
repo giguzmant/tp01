@@ -6,14 +6,14 @@
 
     .why-tit{
         h1{
-            color: #ffffff;
+            color: $why-color;
     
         }
     }
 
     .why-subtit{
 
-            color: #ffffff;
+            color: $why-color;
             width: 50%;
             height: 60px;
             margin: auto;
@@ -24,7 +24,7 @@
             text-align: center;
             letter-spacing: 0.1px;
             padding-bottom: 40px;
-            font-family: "Open Sans"; 
+            font-family: $open-font; 
     }
 
     .why-container-cards{
@@ -35,7 +35,7 @@
 
 
         .why-card{
-            background-color: #00458f;
+            background-color: $why-bg-card;
             height: 295px;
             width: 300px;
             text-align: center;
@@ -60,7 +60,7 @@
 
                 .why-card-tit{
                 
-                    font-family: "Montserrat", sans-serif;
+                    font-family: $montserrat-font;
                     font-size: 19px;
                     
                     h3{
@@ -74,7 +74,7 @@
 
                     display: flex;
                     align-items: center;
-                    font-family: "Open Sans", sans-serif;
+                    font-family: $open-font;
                     font-size: 14px;
                     font-weight: 400;
                     line-height: 23px;
@@ -88,15 +88,15 @@
 
                 .why-anchor{
                     text-decoration: none;
-                     color: #ffffff;
-                     font-family: "Open Sans", sans-serif;
+                     color: $why-color;
+                     font-family: $open-font;
                     font-weight: 700;
                     font-size: 16px;
                 }
             }
 
             &:hover{
-                background-color:  #003b7a;
+                background-color: $why-bg-card-hover-color;
             }
         }
 
@@ -114,7 +114,7 @@
 
             .why-num{
 
-                font-family: "Montserrat", sans-serif;
+                font-family: $montserrat-font;
                 text-align: center;
                 font-size: 33px;
 
@@ -126,7 +126,7 @@
             .why-data-tit{
                 
                 text-align: center;
-                font-family: "Open Sans", sans-serif;
+                font-family: $open-font;
                 font-size: 15px;
                 font-weight: 400;
                 color: #bfddfe;
@@ -218,9 +218,7 @@
         }
 
 
-
     }
-    
-    
+      
 
 }
