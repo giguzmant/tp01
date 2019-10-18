@@ -11,16 +11,65 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/423e485247.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">.
-      <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
+    <script src="https://code.iconify.design/1/1.0.3/iconify.min.js"></script>
+    <link rel="icon" type="ico" href="/favicon.ico" />
 </head>
 
 <body id="home">
     <header>
         <nav>
-            <div class="logo">
+            <div class="nav-bar">
                 <img src="img/logo-tp.png">
                 <div class="menu-icon" id="menu-icon">
-                    <a href="#menu-mobile"><i class="fa fa-bars" aria-hidden="true"></i>
+                    <a href="#menu-mobile">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <ul class="mobile">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a class="dropdown-mobile" href="#checkbox-1">Drop Down</a>
+                        <label for="checkbox-1" class="button-1">
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </label>
+                        <input type="checkbox" class="checkbox-1" id="checkbox-1" />
+
+                        <div class="label-1">
+                            <ul class="dropdownmobile">
+                                <li><a href="#">Drop Down 1</a></li>
+                                <li><a href="#">Drop Down 2</a>
+                                    <label for="checkbox" class="button">
+                                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                    </label>
+                                    <input type="checkbox" class="checkbox" id="checkbox" />
+                                    <div class="label">
+                                        <ul class="deepdropdownmobile" id="deepdropdownmobile">
+                                            <li><a href="#">Deep Drop Down 1</a></li>
+                                            <li><a href="#">Deep Drop Down 2</a></li>
+                                            <li><a href="#">Deep Drop Down 3</a></li>
+                                            <li><a href="#">Deep Drop Down 4</a></li>
+                                            <li><a href="#">Deep Drop Down 5</a></li>
+                                        </ul>
+
+                                    </div>
+                                </li>
+                                <li><a href="#">Drop Down 3</a></li>
+                                <li><a href="#">Drop Down 4</a></li>
+                                <li><a href="#">Drop Down 5</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#contactus">Contact Us</a></li>
+                </ul>
+                <div class="close">
+                    <a href="#home">
+                        <i class="fa fa-times" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
@@ -32,41 +81,30 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#team">Team</a></li>
-                    <li><a href="#">Drop Down</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </div>
+                    <li class="dropdown"><a href="#">Drop Down
+                            <i class="fa fa-chevron-down icon-down" aria-hidden="true"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Drop Down 1</a></li>
+                            <li class="deepdropdown"><a href="#">Drop Down 2 <i class="fa fa-angle-right"
+                                        aria-hidden="true"></i></a>
+                                <ul class="deepdropdown-menu">
+                                    <li><a href="#">Deep Drop Down 1</a></li>
+                                    <li><a href="#">Deep Drop Down 2</a></li>
+                                    <li><a href="#">Deep Drop Down 3</a></li>
+                                    <li><a href="#">Deep Drop Down 4</a></li>
+                                    <li><a href="#">Deep Drop Down 5</a></li>
+                                </ul>
 
-            <div class="menu-mobile" id="menu-mobile">
-                <ul class="mobile">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#">Drop Down</a>
-                        <div>
-                            <a href="#dropdown-mobile"><i class="fa fa-chevron-down icon-down"
-                                    aria-hidden="true"></i></a>
-                        </div>
-
-                        <div class="dropdown-mobile" id="dropdown-mobile">
-                            <ul>
-                                <li><a href="#">Drop Down 1</a></li>
-                                <li><a href="#">Drop Down 2</a></li>
-                                <li><a href="#">Drop Down 3</a></li>
-                                <li><a href="#">Drop Down 4</a></li>
-                                <li><a href="#">Drop Down 5</a></li>
-                            </ul>
-
-                        </div>
-
+                            </li>
+                            <li><a href="#">Drop Down 3</a></li>
+                            <li><a href="#">Drop Down 4</a></li>
+                            <li><a href="#">Drop Down 5</a></li>
+                        </ul>
                     </li>
-                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#contactus">Contact Us</a></li>
                 </ul>
-                <div class="close"><a href="#home"><i class="fa fa-times" aria-hidden="true"></i>
-                    </a></div>
             </div>
+
         </nav>
     </header>
 
@@ -76,7 +114,6 @@
             <div class="bg-home">
                 <div>
                     <p>We provide <span class="underline">solutions</span> for your business!</p>
-
 
                     <div class="button-home">
                         <button type="button" class="button-home-1"><a href="#about">Get Started</a></button>
@@ -88,6 +125,7 @@
                     <img src="img/intro-img.svg">
                 </div>
             </div>
+
         </section>
 
         <section id="about">
@@ -412,45 +450,45 @@
                 <div>
                     <div class="data-container">
 
-                            <div class="why-data">
-                                <div class="why-num">
-                                    <h2>274</h2>
-                                </div>
-                                <div class="why-data-tit">
-                                    <p>Clients</p>
-                                </div>
+                        <div class="why-data">
+                            <div class="why-num">
+                                <h2>274</h2>
                             </div>
-
-                            <div class="why-data">
-                                <div class="why-num">
-                                    <h2>421</h2>
-                                </div>
-                                <div class="why-data-tit">
-                                    <p>Projects</p>
-                                </div>
+                            <div class="why-data-tit">
+                                <p>Clients</p>
                             </div>
+                        </div>
 
-
-                       
-                            <div class="why-data">
-                                <div class="why-num">
-                                    <h2>1,364</h2>
-                                </div>
-                                <div class="why-data-tit">
-                                    <p>Hours Of Support</p>
-                                </div>
+                        <div class="why-data">
+                            <div class="why-num">
+                                <h2>421</h2>
                             </div>
-
-                            <div class="why-data">
-                                <div class="why-num">
-                                    <h2>18</h2>
-                                </div>
-                                <div class="why-data-tit">
-                                    <p>Hard Workers</p>
-                                </div>
+                            <div class="why-data-tit">
+                                <p>Projects</p>
                             </div>
+                        </div>
 
-                        
+
+
+                        <div class="why-data">
+                            <div class="why-num">
+                                <h2>1,364</h2>
+                            </div>
+                            <div class="why-data-tit">
+                                <p>Hours Of Support</p>
+                            </div>
+                        </div>
+
+                        <div class="why-data">
+                            <div class="why-num">
+                                <h2>18</h2>
+                            </div>
+                            <div class="why-data-tit">
+                                <p>Hard Workers</p>
+                            </div>
+                        </div>
+
+
                     </div>
 
                 </div>
@@ -625,33 +663,37 @@
                     <h1>Testimonials</h1>
                 </div>
                 <article class="slider-container">
-                        <input type="radio" name="radio-but" id="radio1" />
-                        <input type="radio" name="radio-but" id="radio2" />
-                        <input type="radio" name="radio-but" id="radio3" />
-                        <input type="radio" name="radio-but" id="radio4" />
-                        <input type="radio" name="radio-but" id="radio5" />
-                        <div class="sliders">
-                            <div class="slider-testimonials">
-                                <img src="img/testimonial-1.jpg" alt="Hannah Horvath" class="test-img">
-                                <div class="test-info">
+                    <input type="radio" name="radio-but" id="radio1" />
+                    <input type="radio" name="radio-but" id="radio2" />
+                    <input type="radio" name="radio-but" id="radio3" />
+                    <input type="radio" name="radio-but" id="radio4" />
+                    <input type="radio" name="radio-but" id="radio5" />
+                    <div class="sliders">
+                        <div class="slider-testimonials">
+                            <img src="img/testimonial-1.jpg" alt="Hannah Horvath" class="test-img">
+                            <div class="test-info">
                                 <h3 class="slider-name">Hannah Horvath</h3>
                                 <h4 class="slider-charge">CEO & Founder</h4>
-                                <p class="slider-info">Donec at gravida risus. Vestibulum mattis ante elementum sem euismod, eleifend molestie
-                                    purus pretium. Suspendisse tristique venenatis massa ut vestibulum.</p></div>
+                                <p class="slider-info">Donec at gravida risus. Vestibulum mattis ante elementum sem
+                                    euismod, eleifend molestie
+                                    purus pretium. Suspendisse tristique venenatis massa ut vestibulum.</p>
                             </div>
+                        </div>
 
-                            <div class="slider-testimonials">
-                                <img src="img/testimonial-2.jpg" alt="Elijah Krantz" class="test-img">
-                                <div class="test-info">
+                        <div class="slider-testimonials">
+                            <img src="img/testimonial-2.jpg" alt="Elijah Krantz" class="test-img">
+                            <div class="test-info">
                                 <h3 class="slider-name">Elijah Krantz</h3>
                                 <h4 class="slider-charge">Designer</h4>
-                                <p class="slider-info">Etiam mollis turpis quis risus tincidunt, eget rutrum nisi tempus. Vestibulum ante ipsum
-                                    primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p></div>
+                                <p class="slider-info">Etiam mollis turpis quis risus tincidunt, eget rutrum nisi
+                                    tempus. Vestibulum ante ipsum
+                                    primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
                             </div>
+                        </div>
 
-                            <div class="slider-testimonials">
-                                <img src="img/testimonial-3.jpg" alt="Desi Harperin" class="test-img">
-                                <div class="test-info">
+                        <div class="slider-testimonials">
+                            <img src="img/testimonial-3.jpg" alt="Desi Harperin" class="test-img">
+                            <div class="test-info">
                                 <h3 class="slider-name">Desi Harperin</h3>
                                 <h4 class="slider-charge">Store Owner</h4>
                                 <p class="slider-info">
@@ -660,49 +702,53 @@
                                     Morbi ut convallis ex, eu eleifend mauris.
                                 </p>
                             </div>
-                            </div>
+                        </div>
 
-                            <div class="slider-testimonials">
-                                <img src="img/testimonial-4.jpg" alt="Ray Ploshansky" class="test-img">
-                                <div class="test-info">
+                        <div class="slider-testimonials">
+                            <img src="img/testimonial-4.jpg" alt="Ray Ploshansky" class="test-img">
+                            <div class="test-info">
                                 <h3 class="slider-name">Ray Ploshansky</h3>
                                 <h4 class="slider-charge">Freelancer</h4>
-                                <p class="slider-info">Morbi nec quam in nibh volutpat tincidunt sit amet et turpis. Vestibulum egestas est
+                                <p class="slider-info">Morbi nec quam in nibh volutpat tincidunt sit amet et turpis.
+                                    Vestibulum egestas est
                                     suscipit
                                     dignissim convallis. Maecenas venenatis eros in purus sodales, sit amet auctor lorem
                                     volutpat.
                                 </p>
-                                </div>
                             </div>
+                        </div>
 
-                            <div class="slider-testimonials">
-                                <img src="img/testimonial-5.jpg" alt="Adam Sackler" class="test-img">
-                                <div class="test-info">
+                        <div class="slider-testimonials">
+                            <img src="img/testimonial-5.jpg" alt="Adam Sackler" class="test-img">
+                            <div class="test-info">
                                 <h3 class="slider-name">Adam Sackler</h3>
                                 <h4 class="slider-charge">Entrepreneur</h4>
-                                <p class="slider-info">Aenean in mauris faucibus ligula laoreet laoreet eu vitae turpis. Sed varius tincidunt
+                                <p class="slider-info">Aenean in mauris faucibus ligula laoreet laoreet eu vitae turpis.
+                                    Sed varius tincidunt
                                     laoreet.
                                     Praesent
-                                    pretium posuere enim, ac auctor diam laoreet finibus.</p></div>
+                                    pretium posuere enim, ac auctor diam laoreet finibus.</p>
                             </div>
-                           
-                        </div> 
-                        <div id="botones-slider">
+                        </div>
+
+                    </div>
+                    <div id="botones-slider">
                         <label for="radio1" class="btn" id="rad1"></label>
                         <label for="radio2" class="btn" id="rad2"></label>
                         <label for="radio3" class="btn" id="rad1"></label>
                         <label for="radio4" class="btn"></label>
-                        <label for="radio5" class="btn"></label>    
-                        </div>            
-                 </article>
+                        <label for="radio5" class="btn"></label>
+                    </div>
+                </article>
             </div>
 
         </section>
 
-        <section id="team">         
+        <section id="team">
             <div class="team-titles">
                 <h1>Team</h1>
-                <h4 class="team-sub">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</h4>
+                <h4 class="team-sub">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                    doloremque</h4>
             </div>
             <div id="team-wrap">
                 <article class="team-img">
@@ -711,7 +757,7 @@
                         <div class="team-info">
                             <h3>Hannah Horvath</h3>
                             <h4>Chief Executive Officer</h4>
-                            <div><a href="#" class="media"><i class="fab fa-twitter "></i></a> 
+                            <div><a href="#" class="media"><i class="fab fa-twitter "></i></a>
                                 <a href="#" class="media"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" class="media"><i class="fab fa-instagram"></i></i></a>
                                 <a href="#" class="media"><i class="fab fa-linkedin-in"></i></a>
@@ -719,14 +765,14 @@
                         </div>
                     </div>
                 </article>
-                
+
                 <article class="team-img">
                     <div class="img-team">
                         <img src="img/team-02.jpg" alt="Shoshanna Shapiro" class="team-foto">
                         <div class="team-info">
                             <h3>Shoshanna Shapiro</h3>
                             <h4>Product Manager</h4>
-                            <div><a href="#" class="media"><i class="fab fa-twitter"></i></a> 
+                            <div><a href="#" class="media"><i class="fab fa-twitter"></i></a>
                                 <a href="#" class="media"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" class="media"><i class="fab fa-instagram"></i></i></a>
                                 <a href="#" class="media"><i class="fab fa-linkedin-in"></i></a>
@@ -741,7 +787,7 @@
                         <div class="team-info">
                             <h3>Jessa Johansson</h3>
                             <h4>CTO</h4>
-                            <div><a href="#" class="media"><i class="fab fa-twitter"></i></a> 
+                            <div><a href="#" class="media"><i class="fab fa-twitter"></i></a>
                                 <a href="#" class="media"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" class="media"><i class="fab fa-instagram"></i></i></a>
                                 <a href="#" class="media"><i class="fab fa-linkedin-in"></i></a>
@@ -756,7 +802,7 @@
                         <div class="team-info">
                             <h3>Marnie Michaels</h3>
                             <h4>Accountant</h4>
-                            <div><a href="#" class="media"><i class="fab fa-twitter"></i></a> 
+                            <div><a href="#" class="media"><i class="fab fa-twitter"></i></a>
                                 <a href="#" class="media"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" class="media"><i class="fab fa-instagram"></i></i></a>
                                 <a href="#" class="media"><i class="fab fa-linkedin-in"></i></a>
@@ -764,7 +810,7 @@
                         </div>
                     </div>
                 </article>
-                
+
             </div>
         </section>
 
@@ -773,7 +819,8 @@
             <div>
                 <div class="team-titles">
                     <h1>Our Clients</h1>
-                    <h3 class="team-sub">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque dere
+                    <h3 class="team-sub">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque dere
                         santome nida.
                     </h3>
                 </div>
@@ -905,8 +952,11 @@
     </div>
         <div id="copyright">
             <h5>© Copyright <strong>Wayne Enterprises</strong>. All Rights Reserved </h5>
-            <h6>Design by Antonella & Giselle</h6>
         </div>
+
+    
+
+           
     </footer>
 
 </body>
