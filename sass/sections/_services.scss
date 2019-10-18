@@ -6,6 +6,7 @@
     font-family: "Open Sans", sans-serif;
     padding: 20px 7%;
     height: 100%;
+    box-shadow: 0px 0px 10px rgb(155, 155, 155);
 
     
     .subtit{
@@ -102,7 +103,8 @@
 
     
 
-    @include tablet{
+@include tablet{
+
         .subtit{
             width: 60%;
         }
@@ -110,7 +112,7 @@
 
     }
 
-    @include phone{
+@include phone{
 
         .subtit{
             width: 90%;
