@@ -1476,6 +1476,143 @@ main .bg-home .img-home img {
   }
 }
 
+#info-cols {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #info-cols {
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
+@media (min-width: 1024px) {
+  #info-cols {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 400px;
+  }
+}
+
+#ctc-col2 {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  #ctc-col2 {
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+#map {
+  width: 90%;
+  height: 400px;
+  background-color: grey;
+}
+@media (min-width: 1024px) {
+  #map {
+    width: 50%;
+  }
+}
+
+.ctc-info {
+  font-size: 14px;
+  font-family: "Open-sans", sans-serif;
+  color: #273c50;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  text-align: left;
+  line-height: 28px;
+  margin-top: 0;
+}
+
+.fa-map-marker-alt:before, .fa-envelope:before, .fa-phone-alt:before {
+  color: #007bff;
+  font-size: 28px;
+}
+
+#send-msg {
+  background-color: #007bff;
+  border: none;
+  border-radius: 20px;
+  font-family: "Open-sans", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  width: 150px;
+  height: 32px;
+  color: #fff;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+#send-msg:hover {
+  background-color: #0062cc;
+  transition: background-color 0.3s ease;
+}
+
+.ctc-form {
+  display: block;
+  width: 90%;
+  box-sizing: border-box;
+  font-family: "Open-sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: auto;
+  margin-bottom: 16px;
+  padding-left: 15px;
+  padding-top: 3px;
+  border: 1px solid #cccccc;
+}
+
+form {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 1024px) {
+  form {
+    margin-top: 0;
+  }
+}
+
+#ctc-direction {
+  display: inline-block;
+  margin-left: 20px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #ctc-direction {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  #ctc-direction {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+}
+
+.ctc-info-written {
+  display: flex;
+  height: 50px;
+  justify-content: flex-start;
+  margin-left: 15px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
 footer {
   background-color: #004a99;
 }
@@ -1673,141 +1810,6 @@ footer form {
   font-weight: 400;
   color: #fff;
   font-family: "Open-sans", sans-serif;
-#info-cols {
-  margin-bottom: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  #info-cols {
-    display: flex;
-    flex-flow: column wrap;
-  }
-}
-@media (min-width: 1024px) {
-  #info-cols {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    height: 400px;
-  }
-}
-
-#ctc-col2 {
-  width: 100%;
-}
-@media (min-width: 1024px) {
-  #ctc-col2 {
-    width: 50%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-#map {
-  width: 90%;
-  height: 400px;
-  background-color: grey;
-}
-@media (min-width: 1024px) {
-  #map {
-    width: 50%;
-  }
-}
-
-.ctc-info {
-  font-size: 14px;
-  font-family: "Open-sans", sans-serif;
-  color: #273c50;
-  font-weight: 400;
-  line-height: 28px;
-  margin-bottom: 30px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  text-align: left;
-  line-height: 28px;
-  margin-top: 0;
-}
-
-.fa-map-marker-alt:before, .fa-envelope:before, .fa-phone-alt:before {
-  color: #007bff;
-  font-size: 28px;
-}
-
-#send-msg {
-  background-color: #007bff;
-  border: none;
-  border-radius: 20px;
-  font-family: "Open-sans", sans-serif;
-  font-size: 16px;
-  text-align: center;
-  width: 150px;
-  height: 32px;
-  color: #fff;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-}
-#send-msg:hover {
-  background-color: #0062cc;
-  transition: background-color 0.3s ease;
-}
-
-.ctc-form {
-  display: block;
-  width: 90%;
-  box-sizing: border-box;
-  font-family: "Open-sans", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 30px;
-  margin: auto;
-  margin-bottom: 16px;
-  padding-left: 15px;
-  padding-top: 3px;
-  border: 1px solid #cccccc;
-}
-
-form {
-  margin: auto;
-  width: 100%;
-  text-align: center;
-}
-@media (min-width: 1024px) {
-  form {
-    margin-top: 0;
-  }
-}
-
-#ctc-direction {
-  display: inline-block;
-  margin-left: 20px;
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  #ctc-direction {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    margin-top: 20px;
-  }
-}
-@media (min-width: 1024px) {
-  #ctc-direction {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-  }
-}
-
-.ctc-info-written {
-  display: flex;
-  height: 50px;
-  justify-content: flex-start;
-  margin-left: 15px;
-  margin-top: 16px;
-  margin-bottom: 16px;
 }
 
 /* PRUEBA DE BRANCH */
