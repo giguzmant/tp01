@@ -21,8 +21,8 @@
 }
 #portfolio-menu{
     display:flex;
-    width:80%;
     justify-content:space-evenly;
+    width:80%;
     @include tablet{
         width: 50%;
     }
