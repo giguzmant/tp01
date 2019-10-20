@@ -40,7 +40,7 @@
     
                 .underline{
                     text-decoration: underline;
-                    color: $header-underline-color;
+                    color: $color-74b5fc;
                     display: block;
                 }
     
@@ -57,8 +57,8 @@
                 
                 .button-home-1{
                     color: #ffffff;
-                    background: $header-button-1-bg;
-                    border: 1px solid $header-button-1-bg;
+                    background: $color-007bff;
+                    border: 1px solid $color-007bff;
                     border-radius: 20px;
                     width: 180px;
                     height: 43px;
@@ -69,13 +69,13 @@
     
                     a{
                         text-decoration: none;
-                        color: $header-color;
+                        color: $color-ffffff;
     
                     }
     
                     &:hover{
-                        border: 2px solid $header-color;
-                        background: $header-hover-button-bg-color;
+                        border: 2px solid $color-ffffff;
+                        background: $color-1445b3;
                         transition: 0.5s all ease-in-out;
 
                 }
@@ -89,18 +89,18 @@
                     font-size: 15px;
                     font-weight: 900;
                     text-align: center;
-                    background: $header-hover-button-bg-color;
-                    color: $header-color;
-                    border: 2px solid $header-color;
+                    background: $color-1445b3;
+                    color: $color-ffffff;
+                    border: 2px solid $color-ffffff;
     
                     a{
                         text-decoration: none;
-                        color: $header-color;
+                        color: $color-ffffff;
             
                     }
     
                     &:hover{
-                        background: $header-button-1-bg;
+                        background: $color-007bff;
                         color: #ffffff;
                         border: 0px;
                         transition: 0.5s all ease-in-out;
@@ -122,8 +122,11 @@
      .bg-home {
 
         padding: 10px 5%;
-                
+
+
             }
+
+    
         
     
 }

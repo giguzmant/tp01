@@ -39,7 +39,7 @@
 .ctc-info{
     font-size:14px;
     font-family:$open-font;
-    color: $contact-color-text;
+    color: $body-tit-color;
     font-weight:400;
     line-height:28px;
     margin-bottom:30px;
@@ -53,12 +53,12 @@
 
 .fa-map-marker-alt, .fa-envelope, .fa-phone-alt{
     &:before{
-        color: $contact-color-icon;
+        color: $color-007bff;
         font-size: 28px;    }
 }
 
 #send-msg{
-    background-color: $contact-color-icon;
+    background-color: $color-007bff;
     border:none;
     border-radius: 20px;
     font-family:$open-font;
@@ -66,11 +66,11 @@
     text-align:center;
     width:150px;
     height:32px;
-    color:#fff; 
+    color:$color-ffffff; 
     transition: background-color 0.3s ease;
     cursor:pointer;
     &:hover{
-        background-color: darken($contact-color-icon,10%);
+        background-color: darken($color-007bff,10%);
         transition: background-color 0.3s ease;
     }
 

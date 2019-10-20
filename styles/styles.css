@@ -442,7 +442,6 @@ header nav .menu .dropdown .deepdropdown:hover ul {
 }
 #about {
   padding: 20px 7%;
-  height: 100%;
 }
 #about .about-subtit {
   display: flex;
@@ -578,7 +577,8 @@ header nav .menu .dropdown .deepdropdown:hover ul {
 #about .final-block .about-third-part p {
   font-size: 16px;
   font-weight: 400;
-  color: #444444;
+  margin-bottom: 0px;
+  color: #464748;
   line-height: 25px;
   font-family: "Open-sans", sans-serif;
 }
@@ -706,7 +706,6 @@ header nav .menu .dropdown .deepdropdown:hover ul {
   background-color: #004a99;
   color: #ffffff;
   padding: 20px 7%;
-  height: 100%;
 }
 #why-choose-us .why-tit h1 {
   color: #ffffff;
@@ -866,8 +865,7 @@ header nav .menu .dropdown .deepdropdown:hover ul {
   padding-bottom: 70px;
   font-family: "Open-sans", sans-serif;
   padding: 20px 7%;
-  height: 100%;
-  box-shadow: 0px 0px 10px #9b9b9b;
+  box-shadow: 0px 0px 10px #707070;
 }
 #services .subtit {
   width: 45%;
@@ -999,7 +997,7 @@ header nav .menu .dropdown .deepdropdown:hover ul {
   font-size: 12px;
 }
 .portfolio-menu-anchor:hover {
-  color: #fff;
+  color: #ffffff;
 }
 
 .portfolio-img {
@@ -1051,7 +1049,7 @@ header nav .menu .dropdown .deepdropdown:hover ul {
 }
 .portfolio-info p {
   text-align: center;
-  color: #fff;
+  color: #a79797;
   font-family: "Open-sans", sans-serif;
 }
 .portfolio-info div {
@@ -1073,7 +1071,7 @@ header nav .menu .dropdown .deepdropdown:hover ul {
 }
 .portfolio-info div .fas:before {
   font-size: 17px;
-  color: #fff;
+  color: #ffffff;
   line-height: 30px;
   text-align: center;
 }
@@ -1226,12 +1224,12 @@ header nav .menu .dropdown .deepdropdown:hover ul {
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  color: #111;
+  color: #000000;
   margin-bottom: 5px;
 }
 .slider-testimonials .slider-charge {
   font-size: 14px;
-  color: #999;
+  color: #999999;
   font-family: "Montserrat", sans-serif;
   margin-top: 0px;
   font-weight: 400;
@@ -1248,7 +1246,7 @@ header nav .menu .dropdown .deepdropdown:hover ul {
 .test-img {
   width: 142px;
   height: 142px;
-  border: 4px solid #fff;
+  border: 4px solid #ffffff;
   border-radius: 50%;
 }
 
@@ -1433,7 +1431,7 @@ header nav .menu .dropdown .deepdropdown:hover ul {
 }
 .team-info h3 {
   margin: 0;
-  color: #fff;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 700;
   text-align: center;
@@ -1442,7 +1440,7 @@ header nav .menu .dropdown .deepdropdown:hover ul {
 }
 .team-info h4 {
   margin: 0;
-  color: #fff;
+  color: #ffffff;
   font-size: 13px;
   font-family: "Open-sans", sans-serif;
   font-style: italic;
@@ -1456,7 +1454,7 @@ header nav .menu .dropdown .deepdropdown:hover ul {
 }
 .team-info div .fab:before {
   font-size: 17px;
-  color: #fff;
+  color: #ffffff;
   line-height: 30px;
   text-align: center;
 }
@@ -1470,17 +1468,16 @@ header nav .menu .dropdown .deepdropdown:hover ul {
 }
 
 #clients {
-  background-color: #e6f0fb;
+  background-color: #ecf5ff;
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
   padding-bottom: 80px;
-  height: 100%;
 }
 
 .client-logo {
-  background-color: #fff;
-  border: 1px solid #e6f0fb;
+  background-color: #ffffff;
+  border: 1px solid #ecf5ff;
   width: 90%;
   height: 160px;
   box-sizing: border-box;
@@ -1604,7 +1601,7 @@ header nav .menu .dropdown .deepdropdown:hover ul {
   text-align: center;
   width: 150px;
   height: 32px;
-  color: #fff;
+  color: #ffffff;
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
@@ -1672,7 +1669,7 @@ footer {
   background-color: #004a99;
 }
 footer h1 {
-  color: #fff;
+  color: #ffffff;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   footer h1 {
@@ -1799,7 +1796,7 @@ footer form {
   line-height: 40px;
 }
 .ctc-media ibefore {
-  color: #fff;
+  color: #ffffff;
 }
 
 .container-media {
@@ -1863,8 +1860,27 @@ footer form {
   text-align: center;
   font-size: 13px;
   font-weight: 400;
-  color: #fff;
+  color: #ffffff;
   font-family: "Open-sans", sans-serif;
+}
+#copyright #button-web {
+  display: inline;
+}
+#copyright #button-web .up {
+  position: fixed;
+  bottom: 13px;
+  right: 12px;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: #007bff;
+  z-index: 1;
+}
+#copyright #button-web .up i {
+  position: absolute;
+  bottom: 16px;
+  right: 15px;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=styles.css.map */

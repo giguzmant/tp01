@@ -1,19 +1,18 @@
 #why-choose-us{
-    background-color: $why-bg-color;
-    color: $why-color;
+    background-color: $color-004a99;
+    color: $color-ffffff;
     padding: 20px 7%;
-    height: 100%;
 
     .why-tit{
         h1{
-            color: $why-color;
+            color: $color-ffffff;
     
         }
     }
 
     .why-subtit{
 
-            color: $why-color;
+            color: $color-ffffff;
             width: 50%;
             height: 60px;
             margin: auto;
@@ -35,7 +34,7 @@
 
 
         .why-card{
-            background-color: $why-bg-card;
+            background-color: $color-00458f;
             height: 295px;
             width: 300px;
             text-align: center;
@@ -88,7 +87,7 @@
 
                 .why-anchor{
                     text-decoration: none;
-                     color: $why-color;
+                     color: $color-ffffff;
                      font-family: $open-font;
                     font-weight: 700;
                     font-size: 16px;
@@ -96,7 +95,7 @@
             }
 
             &:hover{
-                background-color: $why-bg-card-hover-color;
+                background-color: $color-003b7a;
             }
         }
 
@@ -129,7 +128,7 @@
                 font-family: $open-font;
                 font-size: 15px;
                 font-weight: 400;
-                color: #bfddfe;
+                color: $color-bfddfe;
 
                 p{
                     margin-top: 5px;

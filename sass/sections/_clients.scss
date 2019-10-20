@@ -1,15 +1,14 @@
 #clients{
-    background-color: $clients-bg-color;
+    background-color: $color-ecf5ff;
     box-shadow: inset 0px 0px 12px 0px rgba(0,0,0,0.1);
     display:flex;
     justify-content: center;
     padding-bottom:80px;
-    height: 100%;
 }
 
 .client-logo{
-    background-color:#fff;
-    border:1px solid $clients-bg-color;
+    background-color:$color-ffffff;
+    border:1px solid $color-ecf5ff;
     width:90%;
     height:160px;
     box-sizing:border-box;
