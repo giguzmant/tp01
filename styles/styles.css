@@ -968,9 +968,11 @@ header nav .menu .dropdown .deepdropdown:hover ul {
   text-align: center;
   height: 33px;
   line-height: 33px;
+  transition: background-color 0.5s ease;
 }
 .portfolio-filter:hover {
   background-color: #017bfe;
+  transition: background-color 0.5s ease;
 }
 
 #portfolio-menu {
@@ -1049,7 +1051,7 @@ header nav .menu .dropdown .deepdropdown:hover ul {
 }
 .portfolio-info p {
   text-align: center;
-  color: #a79797;
+  color: #ffffff;
   font-family: "Open-sans", sans-serif;
 }
 .portfolio-info div {
@@ -1546,7 +1548,7 @@ header nav .menu .dropdown .deepdropdown:hover ul {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    height: 400px;
+    height: 500px;
   }
 }
 
@@ -1865,6 +1867,7 @@ footer form {
 }
 #copyright #button-web {
   display: inline;
+  opacity: 1;
 }
 #copyright #button-web .up {
   position: fixed;
