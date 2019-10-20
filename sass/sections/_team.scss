@@ -13,7 +13,7 @@
     font-family: $open-font;
     font-size:15px;
     text-align:center;
-    padding-bottom:60px;
+    padding-bottom:0px;
     color: $body-sub-color;
     font-weight:400;
     text-align:center;
@@ -24,6 +24,26 @@
     @include desktop{
         width: 80%;
     }
+}
+#team-wrap{
+    display:flex;
+    flex-direction: column;
+    box-sizing:border-box;
+        @include tablet{
+            flex-flow: column wrap;
+            height:444px;
+            width: 40%;
+            justify-content: center;
+            margin-bottom: 70px;
+
+        } 
+        @include desktop{
+            flex-flow:row wrap;
+            justify-content:center;
+            margin:auto;
+            height:300px;
+            align-items: flex-start;
+        }
 }
 .team-img{
     box-sizing:border-box;
@@ -46,7 +66,8 @@
             }
         }
     @include tablet{
-        max-width:80%;
+        max-width:50%;
+        margin: 5px;
     }
     @include desktop{
         max-width:20%;
@@ -73,6 +94,7 @@
         font-weight:700;
         text-align:center;
         font-family: $montserrat-font;
+        width: 67%;
 
     }
     h4{
@@ -114,22 +136,3 @@
     }
 }
 
-#team-wrap{
-    display:flex;
-    flex-direction: column;
-    box-sizing:border-box;
-        @include tablet{
-            flex-flow: column wrap;
-            margin:auto;
-            height:1000px;
-            width:100%;
-
-        } 
-        @include desktop{
-            flex-flow:row wrap;
-            justify-content:center;
-            margin:auto;
-            height:300px;
-            align-items: flex-start;
-        }
-}
