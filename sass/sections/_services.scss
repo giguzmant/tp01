@@ -32,6 +32,8 @@
         width: 100%;
         align-content: center;
         margin-bottom: 35px;
+        margin-left:auto;
+        margin-right:auto;
 
 
         .card{
@@ -44,6 +46,8 @@
             background-color: $color-ffffff;
             margin: 20px;
             padding: 20px;
+            position:relative;
+            overflow: hidden;
         
     
             .card-icon{
@@ -51,6 +55,7 @@
                 flex-direction: column;
                 justify-content: center;
                 position: absolute;
+                left:-10px; 
                 
                 
                 img{
