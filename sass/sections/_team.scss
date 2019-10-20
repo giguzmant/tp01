@@ -89,7 +89,7 @@
     border-radius:50%;
     h3{
         margin:0;
-        color:#fff;
+        color:$color-ffffff;
         font-size:18px;
         font-weight:700;
         text-align:center;
@@ -99,7 +99,7 @@
     }
     h4{
         margin:0;
-        color:#fff;
+        color:$color-ffffff;
         font-size:13px;
         font-family: $open-font;
         font-style:italic;
@@ -113,7 +113,7 @@
         .fab{
             &:before{
                 font-size: 17px;
-                color:#fff;
+                color:$color-ffffff;
                 line-height:30px;
                 text-align:center;
             }
@@ -130,7 +130,7 @@
     &:hover{
       .fab{
           &:before{
-              color:$team-hover-bg-color;
+              color:$color-007bff;
           }
       }
     }

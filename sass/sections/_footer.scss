@@ -1,7 +1,7 @@
 footer{
-    background-color: $footer-bg-color;
+    background-color: $color-004a99;
     h1{
-        color:#fff;
+        color: $color-ffffff;
         @include tablet{
             text-align:left;
         }
@@ -23,7 +23,7 @@ footer{
     }
     a{
         text-decoration:none;
-        color: $testimonials-bg-color;
+        color: $color-ecf5ff;
         font-family: $open-font;
     }
     form{
@@ -102,7 +102,7 @@ footer{
 }
 
 .ctc-media{
-    background-color: $footer-button-bg-color;
+    background-color: $color-007bff;
     width:40px;
     height:40px;
     border-radius:50%;
@@ -112,13 +112,13 @@ footer{
     margin-top:20px;
     margin-bottom:20px;
     &:hover{
-        background-color: darken($footer-button-bg-color, 10%);
+        background-color: darken($color-007bff, 10%);
         transition:background-color 0.3s ease;
     }
     i{
         line-height:40px;
         &before{
-            color:#fff;
+            color:$color-ffffff;
             
         }
     }
@@ -151,7 +151,7 @@ footer{
     width:65%;
 }
 .subs-but{
-    background-color: $footer-button-bg-color;
+    background-color: $color-007bff;
     width:35%;
     transition:background-color 0.3s ease;
     text-align:center;
@@ -162,13 +162,13 @@ footer{
     font-family:$open-font;
     font-size: 14px; 
     &:hover{
-        background-color: darken($footer-button-bg-color, 10%);
+        background-color: darken($color-007bff, 10%);
         transition:background-color 0.3s ease;
     }
 }
 
 #copyright{
-    background-color: darken($footer-bg-color,15%);
+    background-color: darken($color-004a99,15%);
     padding-top:20px;
     padding-bottom:20px;
     h5{
@@ -179,7 +179,7 @@ footer{
         text-align:center;
         font-size:13px;
         font-weight:400;
-        color:#fff;
+        color:$color-ffffff;
         font-family:$open-font;
     }
 }

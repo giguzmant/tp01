@@ -1,7 +1,6 @@
 #about{
 
     padding: 20px 7%;
-    height: 100%;
 
     .about-subtit{
 
@@ -42,7 +41,7 @@
             p{
                 font-size: 16px;
                 font-weight: 400;
-                color: $about-text-color;
+                color: $color-444444;
                 line-height: 25px;
             }
 
@@ -57,11 +56,11 @@
                     justify-content: center;
 
                     i{
-                        color: $about-icon-color;
+                        color: $color-007bff;
                         height: 65px;
                         width: 65px;
                         border-radius: 50%;
-                        border: 2px solid $about-icon-color;
+                        border: 2px solid $color-007bff;
                         transition: 0.3s all ease-in;
                         font-size: 25px;
                         display: flex;
@@ -71,8 +70,8 @@
 
                         &:hover{
 
-                            background: $about-icon-bg-color-hover;
-                            color: $about-icon-color-hover;
+                            background: $color-007bff;
+                            color: $color-ffffff;
 
                         }
                     
@@ -85,7 +84,7 @@
 
                     .item-tit{
                         text-decoration:none;
-                        color: $about-icon-tit-color;
+                        color: $color-283d50;
                         font-family: $montserrat-font;
 
                     }
@@ -94,7 +93,7 @@
                         font-size: 15px;
                         font-weight: 400;
                         line-height: 25px;
-                        color: $about-icon-color-text;
+                        color: $color-444444;
 
                         
                         article{
@@ -127,7 +126,7 @@
                 font-family: $montserrat-font;
                 font-size: 23px;
                 font-weight: 400;
-                color: $about-tit;
+                color: $color-464748;
                 
                 h4{
                     margin-bottom:0px;
@@ -139,7 +138,7 @@
             p{
                 font-size: 16px;
                 font-weight: 400;
-                color: $about-text-color;
+                color: $color-444444;
                 line-height: 25px;
                 font-family: $open-font;
                
@@ -170,7 +169,7 @@
                 font-family: $montserrat-font;
                 font-size: 23px;
                 font-weight: 400;
-                color: $about-tit;
+                color: $color-464748;
 
                 h4{
                     margin-bottom:0px;
@@ -181,7 +180,8 @@
 
                 font-size: 16px;
                 font-weight: 400;
-                color: $about-text-color;     
+                margin-bottom:0px;
+                color: $color-464748;     
                 line-height: 25px;
                 font-family: $open-font;
             }

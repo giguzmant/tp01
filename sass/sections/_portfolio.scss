@@ -7,14 +7,14 @@
 }
 
 .portfolio-filter{
-    background-color: $portfolio-button-bg-color;
+    background-color: $color-ecf5ff;
     width:65px;
     border-radius:20px;
     text-align:center;
     height:33px;
     line-height:33px;
     &:hover{
-        background-color: $portfolio-button-color;
+        background-color: $color-017bfe;
     }
 
 
@@ -34,11 +34,11 @@
 .portfolio-menu-anchor{
     text-decoration:none;
     font-family: $open-font;
-    color:$portfolio-button-color;
+    color: $color-017bfe;
     font-weight:100;
     font-size:12px;
     &:hover{
-        color: #fff;
+        color: $color-ffffff;
     }
 }
 
@@ -86,7 +86,7 @@
     }
     p{
         text-align:center;
-        color:#fff;
+        color:rgb(167, 151, 151);
         font-family:$open-font;
     }
     div{
@@ -97,18 +97,18 @@
             width:30px;
             height:30px;
             border-radius:50%;
-            background-color:$portfolio-button-color;
+            background-color: $color-017bfe;
             text-align:center;
             cursor:pointer;
             &:hover{
-                background-color:lighten($portfolio-button-color, 10%);
+                background-color:lighten($color-017bfe, 10%);
                 transition: background-color 0.5s ease;
             }
             }
         .fas{
             &:before{
                 font-size: 17px;
-                color:#fff;
+                color: $color-ffffff;
                 line-height:30px;
                 text-align:center;
             }
@@ -127,7 +127,7 @@
         text-decoration: none;
         transition: color 0.5s ease-in-out;
         &:hover{
-            color: $portfolio-button-color;
+            color: $color-017bfe;
             transition: color 0.5s ease-in-out;
         }
 }

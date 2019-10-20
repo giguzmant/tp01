@@ -1,7 +1,7 @@
 header {
     position: fixed;
-    box-shadow: $menu-desktop-box-shadow;
-    background-color: $menu-bg-color;
+    box-shadow: $desktop-box-shadow;
+    background-color: $color-ffffff;
     top:0;
     height: 80px;
     width: 100%;
@@ -23,7 +23,7 @@ header {
                                 display: none;
 
                              a {
-                                color: $menu-desktop-color;
+                                color: $color-0047a2;
                                  font-size: 27px;
 
                                 }
@@ -64,14 +64,14 @@ header {
                                     padding: 2px;
                                     
                                         a {
-                                            color: $menu-mobile-color;
+                                            color: $color-ffffff;
                                             font-family: $open-font;
-                                            font-weight: $menu-mobile-font-weight;
+                                            font-weight: 500;
                                             text-decoration: none;
                                         }
 
                                         a:hover {
-                                            color: $menu-mobile-hover-color;
+                                            color: $color-74b5fc;
                                             transition: 0.5s all ease-in-out;
                                         }
                                 }
@@ -135,25 +135,25 @@ header {
                                     position: relative;
                                     left: 77px;
                                     font-size: 17px;
-                                    color: $menu-mobile-color;
+                                    color: $color-ffffff;
                                     bottom: 1px;
                                     font-weight: 700;
 
 
                                     &:hover{
-                                        color: $menu-mobile-hover-color;
+                                        color: $color-74b5fc;
                                     }
                                 }
 
                                 .icon-drop{
                                     position: relative;
-                                    color: $menu-mobile-color;
+                                    color: $color-ffffff;
                                     font-size: 17px;
                                     font-weight: 700;
                                     left: 119px;
 
                                     &:hover{
-                                        color: $menu-mobile-hover-color;
+                                        color: $color-74b5fc;
                                     }
                                 }
                      
@@ -165,7 +165,7 @@ header {
                             right: 7%;
 
                                 a {
-                                    color: $menu-mobile-color;
+                                    color: $color-ffffff;
                                     font-size: 30px;
                                 }
                         }    
@@ -201,12 +201,12 @@ header {
                             list-style: none;
                             
                                  a {
-                                    color: $menu-desktop-color;
+                                    color: $color-0047a2;
                                     text-decoration: none;
                                         
                                     &:hover {
 
-                                        color: $menu-desktop-hover;
+                                        color: $color-477bff;
 
                                              }
                                     }                                                  
@@ -220,12 +220,12 @@ header {
                             ul{
 
                                 display:none;
-                                background-color: $menu-bg-color;
+                                background-color: $color-ffffff;
                                 font-size: 13px;
                                 width: 150px;
                                 height: 195px;
                                 line-height: 40px;
-                                box-shadow: $menu-desktop-box-shadow;
+                                box-shadow: $desktop-box-shadow;
                                 padding-top: 10px;
                                 padding-bottom:10px;
                                 position: relative;
@@ -263,14 +263,14 @@ header {
 
                                 ul{
                                     display:none;
-                                    background-color: $menu-bg-color;
+                                    background-color: $color-ffffff;
                                     font-size: 13px;
                                     width: 170px;
                                     height: 195px;
                                     line-height: 40px;
                                     left: 120px;
                                     right: 30px;
-                                    box-shadow: $menu-desktop-box-shadow;                                   
+                                    box-shadow: $desktop-box-shadow;                                   
                                     top: 10px;
                                     position: relative;
                                 }
