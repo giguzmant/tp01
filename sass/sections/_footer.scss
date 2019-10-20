@@ -182,4 +182,36 @@ footer{
         color:$color-ffffff;
         font-family:$open-font;
     }
-}
+
+    #button-web {
+        display: inline;
+        opacity:1;
+        
+            .up {
+                position: fixed;
+                bottom: 13px;
+                right: 12px;
+                height: 44px;
+                width: 44px;
+                border-radius: 50%;
+                background-color: $color-007bff;
+                z-index: 1;
+
+                i{
+                    position: absolute;
+                    bottom: 16px;
+                    right: 15px;
+                    color: $color-ffffff;
+
+
+                     }
+                }
+
+             
+                
+            }
+        
+    }
+
+
+
