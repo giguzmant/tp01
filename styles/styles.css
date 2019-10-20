@@ -888,6 +888,8 @@ header nav .menu .dropdown .deepdropdown:hover ul {
   width: 100%;
   align-content: center;
   margin-bottom: 35px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #services .cards .card {
   display: flex;
@@ -899,12 +901,15 @@ header nav .menu .dropdown .deepdropdown:hover ul {
   background-color: #ffffff;
   margin: 20px;
   padding: 20px;
+  position: relative;
+  overflow: hidden;
 }
 #services .cards .card .card-icon {
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: absolute;
+  left: -10px;
 }
 #services .cards .card .card-icon img {
   width: 56px;
