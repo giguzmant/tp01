@@ -2,7 +2,6 @@
     display:flex;
     flex-direction: column;
     align-items:center;
-    padding: 20px 10%;
 }
 
 .team-titles{
@@ -14,7 +13,7 @@
     font-family: $open-font;
     font-size:15px;
     text-align:center;
-    padding-bottom:60px;
+    padding-bottom:0px;
     color: $body-sub-color;
     font-weight:400;
     text-align:center;
@@ -33,8 +32,9 @@
         @include tablet{
             flex-flow: column wrap;
             height:444px;
-            width: 60%;
+            width: 40%;
             justify-content: center;
+            margin-bottom: 70px;
 
         } 
         @include desktop{
@@ -92,8 +92,10 @@
         color:#fff;
         font-size:18px;
         font-weight:700;
-        font-family: $menu-font;
         text-align:center;
+        font-family: $montserrat-font;
+        width: 67%;
+
     }
     h4{
         margin:0;

@@ -3,10 +3,10 @@
     background-color: $services-bg-color;
     padding-top: 30px;
     padding-bottom: 70px;
-    font-family: "Open Sans", sans-serif;
+    font-family: $open-font;
     padding: 20px 7%;
     height: 100%;
-    box-shadow: 0px 0px 10px rgb(155, 155, 155);
+    box-shadow: $services-box-shadow;
 
     
     .subtit{
@@ -42,7 +42,7 @@
             width: 300px;
             height: auto;
             border-radius: 10px;
-            background-color: #ffffff;
+            background-color: $services-card-bg-color;
             margin: 20px;
             padding: 20px;
         
@@ -64,15 +64,15 @@
              
              .tit-card{
                 
-                font-family: "Montserrat", sans-serif;
+                font-family: $montserrat-font;
                 font-weight: 800;
                 font-size: 18px;
-                color: #000000;
+                color: $services-tit-card-color;
                 text-decoration: none;
                 margin-left: 75px;
     
                 &:hover{
-                    color: #007bff;
+                    color: $services-card-tit-hover;
                     transition: all 0.3s;
                 }
     
