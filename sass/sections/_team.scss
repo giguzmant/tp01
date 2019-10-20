@@ -13,7 +13,7 @@
     font-family: $open-font;
     font-size:15px;
     text-align:center;
-    padding-bottom:60px;
+    padding-bottom:0px;
     color: $body-sub-color;
     font-weight:400;
     text-align:center;
@@ -32,8 +32,9 @@
         @include tablet{
             flex-flow: column wrap;
             height:444px;
-            width: 60%;
+            width: 40%;
             justify-content: center;
+            margin-bottom: 70px;
 
         } 
         @include desktop{
@@ -93,6 +94,7 @@
         font-weight:700;
         text-align:center;
         font-family: $montserrat-font;
+        width: 67%;
 
     }
     h4{

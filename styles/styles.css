@@ -126,7 +126,7 @@ header nav .menu-mobile .mobile #dropdown-mobile:checked + .label-drop > .dropdo
 }
 header nav .menu-mobile .mobile .icon-deep {
   position: relative;
-  left: 71px;
+  left: 77px;
   font-size: 17px;
   color: #ffffff;
   bottom: 1px;
@@ -155,7 +155,6 @@ header nav .menu-mobile .close a {
   font-size: 30px;
 }
 header nav #menu-mobile:target {
-  visibility: visible;
   opacity: 1;
   transition: left 0.6s ease;
 }
@@ -1343,7 +1342,7 @@ header nav .menu .dropdown .deepdropdown:hover ul {
   font-family: "Open-sans", sans-serif;
   font-size: 15px;
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 0px;
   color: #556783;
   font-weight: 400;
   text-align: center;
@@ -1369,8 +1368,9 @@ header nav .menu .dropdown .deepdropdown:hover ul {
   #team-wrap {
     flex-flow: column wrap;
     height: 444px;
-    width: 60%;
+    width: 40%;
     justify-content: center;
+    margin-bottom: 70px;
   }
 }
 @media (min-width: 1024px) {
@@ -1437,6 +1437,7 @@ header nav .menu .dropdown .deepdropdown:hover ul {
   font-weight: 700;
   text-align: center;
   font-family: "Montserrat", sans-serif;
+  width: 67%;
 }
 .team-info h4 {
   margin: 0;
@@ -1515,7 +1516,7 @@ header nav .menu .dropdown .deepdropdown:hover ul {
   .clients-wrap {
     flex-flow: column wrap;
     height: 500px;
-    width: 100%;
+    width: 95%;
   }
 }
 @media (min-width: 1024px) {
