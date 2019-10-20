@@ -977,8 +977,8 @@ header nav .menu .dropdown .deepdropdown:hover ul {
 
 #portfolio-menu {
   display: flex;
-  width: 80%;
   justify-content: space-evenly;
+  width: 80%;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #portfolio-menu {
@@ -1314,6 +1314,7 @@ header nav .menu .dropdown .deepdropdown:hover ul {
   border-radius: 50%;
   margin-left: 2px;
   margin-right: 2px;
+  cursor: pointer;
 }
 
 #botones-slider {
@@ -1359,6 +1360,29 @@ header nav .menu .dropdown .deepdropdown:hover ul {
   }
 }
 
+#team-wrap {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #team-wrap {
+    flex-flow: column wrap;
+    height: 444px;
+    width: 60%;
+    justify-content: center;
+  }
+}
+@media (min-width: 1024px) {
+  #team-wrap {
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: auto;
+    height: 300px;
+    align-items: flex-start;
+  }
+}
+
 .team-img {
   box-sizing: border-box;
   max-width: 100%;
@@ -1382,7 +1406,8 @@ header nav .menu .dropdown .deepdropdown:hover ul {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .team-img {
-    max-width: 80%;
+    max-width: 50%;
+    margin: 5px;
   }
 }
 @media (min-width: 1024px) {
@@ -1440,29 +1465,6 @@ header nav .menu .dropdown .deepdropdown:hover ul {
 
 .media:hover .fab:before {
   color: #007bff;
-}
-
-#team-wrap {
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  #team-wrap {
-    flex-flow: column wrap;
-    margin: auto;
-    height: 1000px;
-    width: 100%;
-  }
-}
-@media (min-width: 1024px) {
-  #team-wrap {
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: auto;
-    height: 300px;
-    align-items: flex-start;
-  }
 }
 
 #clients {
