@@ -973,8 +973,8 @@ header nav .menu .dropdown .deepdropdown:hover ul {
 
 #portfolio-menu {
   display: flex;
-  width: 80%;
   justify-content: space-evenly;
+  width: 80%;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #portfolio-menu {
@@ -1310,6 +1310,7 @@ header nav .menu .dropdown .deepdropdown:hover ul {
   border-radius: 50%;
   margin-left: 2px;
   margin-right: 2px;
+  cursor: pointer;
 }
 
 #botones-slider {
@@ -1356,6 +1357,29 @@ header nav .menu .dropdown .deepdropdown:hover ul {
   }
 }
 
+#team-wrap {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #team-wrap {
+    flex-flow: column wrap;
+    height: 444px;
+    width: 60%;
+    justify-content: center;
+  }
+}
+@media (min-width: 1024px) {
+  #team-wrap {
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: auto;
+    height: 300px;
+    align-items: flex-start;
+  }
+}
+
 .team-img {
   box-sizing: border-box;
   max-width: 100%;
@@ -1379,7 +1403,8 @@ header nav .menu .dropdown .deepdropdown:hover ul {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .team-img {
-    max-width: 80%;
+    max-width: 50%;
+    margin: 5px;
   }
 }
 @media (min-width: 1024px) {
@@ -1437,29 +1462,6 @@ header nav .menu .dropdown .deepdropdown:hover ul {
 
 .media:hover .fab:before {
   color: #007bff;
-}
-
-#team-wrap {
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  #team-wrap {
-    flex-flow: column wrap;
-    margin: auto;
-    height: 1000px;
-    width: 100%;
-  }
-}
-@media (min-width: 1024px) {
-  #team-wrap {
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: auto;
-    height: 300px;
-    align-items: flex-start;
-  }
 }
 
 #clients {
@@ -1858,140 +1860,6 @@ footer form {
   font-weight: 400;
   color: #fff;
   font-family: "Open-sans", sans-serif;
-
-#info-cols {
-  margin-bottom: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  #info-cols {
-    display: flex;
-    flex-flow: column wrap;
-  }
-}
-@media (min-width: 1024px) {
-  #info-cols {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    height: 400px;
-  }
 }
 
-#ctc-col2 {
-  width: 100%;
-}
-@media (min-width: 1024px) {
-  #ctc-col2 {
-    width: 50%;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-#map {
-  width: 90%;
-  height: 400px;
-  background-color: grey;
-}
-@media (min-width: 1024px) {
-  #map {
-    width: 50%;
-  }
-}
-
-.ctc-info {
-  font-size: 14px;
-  font-family: "Open-sans", sans-serif;
-  color: #273c50;
-  font-weight: 400;
-  line-height: 28px;
-  margin-bottom: 30px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-  text-align: left;
-  line-height: 28px;
-  margin-top: 0;
-}
-
-.fa-map-marker-alt:before, .fa-envelope:before, .fa-phone-alt:before {
-  color: #007bff;
-  font-size: 28px;
-}
-
-#send-msg {
-  background-color: #007bff;
-  border: none;
-  border-radius: 20px;
-  font-family: "Open-sans", sans-serif;
-  font-size: 16px;
-  text-align: center;
-  width: 150px;
-  height: 32px;
-  color: #fff;
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-}
-#send-msg:hover {
-  background-color: #0062cc;
-  transition: background-color 0.3s ease;
-}
-
-.ctc-form {
-  display: block;
-  width: 90%;
-  box-sizing: border-box;
-  font-family: "Open-sans", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 30px;
-  margin: auto;
-  margin-bottom: 16px;
-  padding-left: 15px;
-  padding-top: 3px;
-  border: 1px solid #cccccc;
-}
-
-form {
-  margin: auto;
-  width: 100%;
-  text-align: center;
-}
-@media (min-width: 1024px) {
-  form {
-    margin-top: 0;
-  }
-}
-
-#ctc-direction {
-  display: inline-block;
-  margin-left: 20px;
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  #ctc-direction {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    margin-top: 20px;
-  }
-}
-@media (min-width: 1024px) {
-  #ctc-direction {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-  }
-}
-
-.ctc-info-written {
-  display: flex;
-  height: 50px;
-  justify-content: flex-start;
-  margin-left: 15px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
+/*# sourceMappingURL=styles.css.map */
