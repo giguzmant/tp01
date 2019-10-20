@@ -172,6 +172,7 @@ header {
                                                
                 }
                 #menu-mobile:target {
+                    visibility: visible;
                     opacity: 1;
                     transition: left 0.6s ease;
                 
