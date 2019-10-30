@@ -1,3 +1,11 @@
+/*
+    Deberían llamar a los archivos 
+    sin necesidad de volver para atrás y 
+    llamar a la misma carpeta donde ya estamos 
+    parados.
+    O sea "../sass/common/all" deberia ser
+    "common/all" y con eso debería alcanzar.
+*/
 @import '../sass/common/variables';
 @import '../sass/common/all';
 @import '../sass/common/mixins';
