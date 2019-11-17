@@ -139,6 +139,8 @@
             flex-direction: column-reverse;
             background-size: 100% 697px;
             background-repeat: no-repeat;
+            // Este transform me hace muchisimo ruido.
+            // No es realmente necesario hacer un movimiento hacia arriba
             transform: translateY(61px);
             padding: 41px 0 73px 0;
 
